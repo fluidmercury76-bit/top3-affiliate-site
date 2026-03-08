@@ -1,313 +1,75 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top 3 Choices</title>
-  <meta name="description" content="Top 3 choices for popular Amazon buys">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-    }
-    * { box-sizing: border-box; }
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    .hero {
-      background: white;
-      border-bottom: 1px solid #ddd;
-    }
-    .eyebrow {
-      display: inline-block;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-radius: 999px;
-      font-size: 14px;
-    }
-    h1 {
-      font-size: 42px;
-      margin: 16px 0;
-    }
-    h2 { margin: 0 0 8px 0; }
-    h3 { margin-top: 0; }
-    .intro {
-      font-size: 18px;
-      color: #555;
-      max-width: 700px;
-    }
-    .notice, .why {
-      background: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 16px;
-      padding: 14px;
-      color: #555;
-    }
-    .section {
-      margin-top: 32px;
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 24px;
-      padding: 24px;
-    }
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 24px;
-      padding: 20px;
-      background: white;
-    }
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    .badge {
-      background: #111;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 14px;
-    }
-    .pick-name {
-      font-size: 14px;
-      color: #666;
-    }
-    .card ul {
-      padding-left: 18px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 16px;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 12px 16px;
-      border-radius: 16px;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 24px 0 48px;
-      color: #555;
-      font-size: 14px;
-    }
-    footer a {
-      color: #111;
-      text-decoration: none;
-      margin-right: 16px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 3 Choices</title>
+<meta name="description" content="Top 3 product choices and simple buying guides">
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#111;}
+.wrap{max-width:1000px;margin:auto;padding:24px;}
+.hero{background:white;border-bottom:1px solid #ddd;}
+h1{font-size:40px;margin:16px 0;}
+.notice{background:#fafafa;border:1px solid #ddd;border-radius:12px;padding:12px;color:#555;}
+.section{margin-top:32px;background:white;border:1px solid #ddd;border-radius:18px;padding:24px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.card{border:1px solid #ddd;border-radius:16px;padding:20px;background:white;}
+.button{display:inline-block;margin-top:14px;background:#111;color:white;text-decoration:none;padding:10px 14px;border-radius:12px;}
+footer{margin-top:40px;padding:20px 0;color:#555;font-size:14px;}
+footer a{margin-right:16px;color:#111;text-decoration:none;}
+</style>
 </head>
+
 <body>
-  <div class="page">
-    <header class="hero">
-      <div class="wrap">
-        <p class="eyebrow">Amazon affiliate comparison site starter</p>
-        <h1>Top 3 choices for popular Amazon buys</h1>
-        <p class="intro">
-          A clean affiliate style site that gives visitors three simple choices for each product type.
-        </p>
-        <div class="notice">
-          Disclosure: As an Amazon Associate I earn from qualifying purchases. This page contains affiliate links.
-        </div>
-      </div>
-    </header>
 
-    <main class="wrap">
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <h2>Wireless Earbuds</h2>
-            <p>Three strong picks for everyday listening</p>
-          </div>
-          <div class="why">Why this category: A popular category for everyday buyers.</div>
-        </div>
+<header class="hero">
+<div class="wrap">
+<h1>Top 3 Choices</h1>
+<p>Simple product comparisons that help you choose between three popular options.</p>
 
-        <div class="grid">
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Budget pick</span>
-              <span class="pick-name">Best Value</span>
-            </div>
-            <h3>Anker Soundcore P40i</h3>
-            <p>A lower cost choice for everyday calls, music and commuting.</p>
-            <ul>
-              <li>good battery life</li>
-              <li>solid reviews</li>
-              <li>easy everyday use</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Anker+Soundcore+P40i&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
+<div class="notice">
+As an Amazon Associate I earn from qualifying purchases.
+</div>
+</div>
+</header>
 
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Balanced pick</span>
-              <span class="pick-name">Best All Rounder</span>
-            </div>
-            <h3>JBL Tune Beam</h3>
-            <p>A practical middle ground if you want a known brand and a balanced feature set.</p>
-            <ul>
-              <li>brand recognition</li>
-              <li>comfortable fit</li>
-              <li>good for daily use</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=JBL+Tune+Beam&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
+<main class="wrap">
 
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Premium pick</span>
-              <span class="pick-name">Best Premium</span>
-            </div>
-            <h3>Sony WF 1000XM5</h3>
-            <p>A stronger premium option for people who care about sound and noise cancelling.</p>
-            <ul>
-              <li>strong sound</li>
-              <li>noise cancelling</li>
-              <li>premium positioning</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Sony+WF+1000XM5&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
-        </div>
-      </section>
+<section class="section">
 
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <h2>Air Fryers</h2>
-            <p>Three popular routes into faster home cooking</p>
-          </div>
-          <div class="why">Why this category: A strong home category with lots of buyer interest.</div>
-        </div>
+<h2>Wireless Earbuds</h2>
+<p>Three strong picks for everyday listening.</p>
 
-        <div class="grid">
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Compact pick</span>
-              <span class="pick-name">Best Small Kitchen Choice</span>
-            </div>
-            <h3>Ninja Air Fryer Pro</h3>
-            <p>A space saving option for smaller kitchens and simple cooking routines.</p>
-            <ul>
-              <li>compact size</li>
-              <li>easy to use</li>
-              <li>strong brand demand</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Ninja+Air+Fryer+Pro&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
+<div class="grid">
 
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Family pick</span>
-              <span class="pick-name">Best Family Choice</span>
-            </div>
-            <h3>Tower Dual Basket Air Fryer</h3>
-            <p>Helpful if you want to cook two foods at once with separate baskets.</p>
-            <ul>
-              <li>dual baskets</li>
-              <li>family friendly</li>
-              <li>good value segment</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Tower+Dual+Basket+Air+Fryer&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
+<div class="card">
+<h3>Anker Soundcore P40i</h3>
+<p>Great everyday wireless earbuds.</p>
+<a class="button" href="https://www.amazon.co.uk/s?k=Anker+Soundcore+P40i&tag=top3choices-21" target="_blank">Check price on Amazon</a>
+</div>
 
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Premium pick</span>
-              <span class="pick-name">Best Premium Choice</span>
-            </div>
-            <h3>Philips Dual Basket Air Fryer</h3>
-            <p>A more premium option for buyers who want a larger brand and a cleaner design.</p>
-            <ul>
-              <li>premium look</li>
-              <li>strong brand trust</li>
-              <li>multi meal flexibility</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Philips+Dual+Basket+Air+Fryer&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
-        </div>
-      </section>
+<div class="card">
+<h3>JBL Tune Beam</h3>
+<p>Balanced choice from a well known brand.</p>
+<a class="button" href="https://www.amazon.co.uk/s?k=JBL+Tune+Beam&tag=top3choices-21" target="_blank">Check price on Amazon</a>
+</div>
 
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <h2>Insulated Water Bottles</h2>
-            <p>Three options for work, travel and everyday use</p>
-          </div>
-          <div class="why">Why this category: Practical products that sell steadily.</div>
-        </div>
+<div class="card">
+<h3>Sony WF 1000XM5</h3>
+<p>Premium sound and noise cancelling.</p>
+<a class="button" href="https://www.amazon.co.uk/s?k=Sony+WF+1000XM5&tag=top3choices-21" target="_blank">Check price on Amazon</a>
+</div>
 
-        <div class="grid">
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Budget pick</span>
-              <span class="pick-name">Best Budget</span>
-            </div>
-            <h3>Ion8 Leak Proof Bottle</h3>
-            <p>A straightforward option for school, office and basic daily use.</p>
-            <ul>
-              <li>leak resistant</li>
-              <li>practical shape</li>
-              <li>accessible price</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Ion8+water+bottle&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
+</div>
+</section>
 
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Popular pick</span>
-              <span class="pick-name">Best Everyday</span>
-            </div>
-            <h3>Stanley Quencher</h3>
-            <p>A lifestyle led choice that benefits from strong social demand.</p>
-            <ul>
-              <li>popular design</li>
-              <li>large capacity</li>
-              <li>strong trend appeal</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Stanley+Quencher&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
+<footer>
+<a href="privacy.html">Privacy Policy</a>
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+<a href="contact.html">Contact</a>
+</footer>
 
-          <article class="card">
-            <div class="card-top">
-              <span class="badge">Outdoor pick</span>
-              <span class="pick-name">Best Outdoor</span>
-            </div>
-            <h3>Hydro Flask Wide Mouth</h3>
-            <p>A more premium insulated bottle aimed at active or outdoors buyers.</p>
-            <ul>
-              <li>insulated body</li>
-              <li>durable build</li>
-              <li>travel friendly</li>
-            </ul>
-            <a class="button" href="https://www.amazon.co.uk/s?k=Hydro+Flask+Wide+Mouth&tag=yourtag-21" target="_blank" rel="noreferrer sponsored">View on Amazon</a>
-          </article>
-        </div>
-      </section>
-
-      <footer>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-        <a href="contact.html">Contact</a>
-      </footer>
-    </main>
-  </div>
+</main>
 </body>
 </html>
