@@ -1,4 +1,5 @@
-export default function App() {
+import React from 'react'
+  export default function App() {
   const affiliateTag = "yourtag-21";
 
   const products = [
