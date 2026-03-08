@@ -1,24 +1,18 @@
-# Top 3 Affiliate Site
+# Top 3 Affiliate Static Site
 
-A simple React and Vite website for Amazon affiliate style comparison pages.
+This version is plain HTML so it will work immediately on Vercel and when opened on your computer.
+
+## Files
+- index.html
 
 ## How to use
+1. Replace the existing files in your GitHub repository with this index.html.
+2. Delete the old React files:
+   - package.json
+   - vite.config.js
+   - src folder
+3. Commit the changes.
+4. Vercel will redeploy automatically.
 
-1. Upload this folder into your GitHub repository.
-2. Connect the repository to Vercel.
-3. Replace `yourtag-21` in `src/App.jsx` with your real Amazon Associates tag.
-4. Replace the Amazon search links with your own Special Links from Amazon Associates.
-5. Deploy.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
+## Affiliate tag
+Replace `yourtag-21` in index.html with your real Amazon Associates tag when you have one.
