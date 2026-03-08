@@ -1,18 +1,13 @@
-# Top 3 Affiliate Static Site
+# Top 3 Choices Static Site
 
-This version is plain HTML so it will work immediately on Vercel and when opened on your computer.
-
-## Files
+Files included:
 - index.html
+- privacy.html
+- affiliate-disclosure.html
+- contact.html
 
-## How to use
-1. Replace the existing files in your GitHub repository with this index.html.
-2. Delete the old React files:
-   - package.json
-   - vite.config.js
-   - src folder
-3. Commit the changes.
-4. Vercel will redeploy automatically.
-
-## Affiliate tag
-Replace `yourtag-21` in index.html with your real Amazon Associates tag when you have one.
+## What to do
+1. Upload all files to your GitHub repository.
+2. Let Vercel redeploy automatically.
+3. Replace `yourtag-21` in index.html with your real Amazon affiliate tag.
+4. Replace the example email address in contact.html with your own contact details.
