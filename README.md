@@ -1,1 +1,1 @@
-Upload all files to GitHub and let Vercel redeploy automatically.
+Upload these files to GitHub and let Vercel redeploy.
