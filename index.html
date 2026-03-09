@@ -76,6 +76,25 @@ h3 { margin: 0 0 12px 0; font-size: 20px; }
   background: white; border: 1px solid #ddd; border-radius: 20px;
   padding: 18px; text-decoration: none; color: #111;
 }
+  .airfryer {
+  background-image: url("https://media.istockphoto.com/id/2197321799/photo/air-fryer-on-a-kitchen-countertop.webp?a=1&b=1&s=612x612&w=0&k=20&c=CX1AxkTOhILAu87QxTXcaYRAYsyf5If_dq94hfN_5NY=");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.airfryer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.7);
+}
+
+.airfryer * {
+  position: relative;
+  z-index: 2;
+}
 @media (max-width: 700px) {
   h1 { font-size: 34px; }
   .image-box { height: 220px; font-size: 20px; }
