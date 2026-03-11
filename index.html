@@ -6,6 +6,7 @@
 <title>Top 3 Choices | Compare the Best Products on Amazon UK</title>
 
 <meta name="description" content="Compare the best products available on Amazon UK with our simple top 3 guides. We highlight the best overall choice, the best value option and the best premium pick to help you choose with confidence.">
+
 <style>
 body {
   margin: 0;
@@ -14,88 +15,234 @@ body {
   color: #111;
   line-height: 1.6;
 }
-* { box-sizing: border-box; }
-.wrap { max-width: 1150px; margin: 0 auto; padding: 24px; }
-.hero { background: white; border-bottom: 1px solid #ddd; }
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
 .kicker {
-  display: inline-block; padding: 6px 12px; border: 1px solid #ccc;
-  border-radius: 999px; font-size: 14px; background: #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  font-size: 14px;
+  background: #fff;
 }
-h1 { font-size: 42px; margin: 16px 0; }
-h2 { margin: 0 0 10px 0; }
-h3 { margin: 0 0 12px 0; font-size: 20px; }
-.intro { font-size: 18px; color: #555; max-width: 800px; }
+
+h1 {
+  font-size: 42px;
+  margin: 16px 0;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+}
+
 .notice {
-  background: #fafafa; border: 1px solid #ddd; border-radius: 16px;
-  padding: 14px; color: #555; margin-top: 20px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 14px;
+  color: #555;
+  margin-top: 20px;
 }
+
 .section {
-  background: white; border: 1px solid #ddd; border-radius: 24px;
-  padding: 24px; margin-top: 28px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  padding: 24px;
+  margin-top: 40px;
 }
-.compare-table { width: 100%; border-collapse: collapse; margin-top: 18px; border: 1px solid #ddd; }
-.compare-table th, .compare-table td {
-  border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top;
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  border: 1px solid #ddd;
 }
-.compare-table th { background: #fafafa; }
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.compare-table th {
+  background: #fafafa;
+}
+
 .top-picks {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px; margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 18px;
 }
-.card { background: white; border: 1px solid #ddd; border-radius: 24px; padding: 22px; }
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  padding: 22px;
+}
+
 .badge {
-  display: inline-block; padding: 8px 14px; border-radius: 999px;
-  font-size: 14px; font-weight: bold; background: #111; color: white; margin-bottom: 18px;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #111;
+  color: white;
+  margin-bottom: 18px;
 }
+
 .image-box {
-  height: 260px; border: 1px solid #ddd; border-radius: 20px;
+  height: 260px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
   background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
-  display: flex; align-items: center; justify-content: center; text-align: center;
-  padding: 20px; color: #444; font-size: 22px; margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: centre;
+  padding: 20px;
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
-.summary { color: #444; margin-bottom: 14px; }
-.bestfor { color: #555; margin-bottom: 18px; }
+
+.summary {
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.bestfor {
+  color: #555;
+  margin-bottom: 18px;
+}
+
 .box {
-  border: 1px solid #e2e2e2; border-radius: 16px; padding: 14px 16px;
-  background: #fafafa; margin-bottom: 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #fafafa;
+  margin-bottom: 14px;
 }
-.box h4 { margin: 0 0 10px 0; font-size: 17px; }
-.pros h4 { color: #1d6b3a; }
-.cons h4 { color: #9a1f1f; }
-.box ul { margin: 0; padding-left: 20px; }
+
+.box h4 {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+}
+
+.pros h4 {
+  color: #1d6b3a;
+}
+
+.cons h4 {
+  color: #9a1f1f;
+}
+
+.box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
 .button {
-  display: inline-block; margin-top: 10px; background: #111; color: white;
-  text-decoration: none; padding: 13px 18px; border-radius: 14px; font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  padding: 13px 18px;
+  border-radius: 14px;
+  font-weight: bold;
 }
-.footer-links { margin-top: 40px; padding: 10px 0 40px; font-size: 14px; color: #555; }
-.footer-links a { color: #111; text-decoration: none; margin-right: 16px; }
+
+.footer-links {
+  margin-top: 40px;
+  padding: 10px 0 40px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-links a {
+  color: #111;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
 .listlinks {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px; margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
 }
+
 .linkcard {
   background: white;
   border: 1px solid #ddd;
   border-radius: 20px;
-  padding: 18px;
   text-decoration: none;
   color: #111;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   position: relative;
+  min-height: 220px;
+  overflow: hidden;
+  display: block;
 }
-  .linkcard:hover {
+
+.linkcard:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-  ..cardtext {
+
+.cardtext {
   position: absolute;
   bottom: 15px;
   left: 15px;
   right: 15px;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.88);
   padding: 10px 14px;
   border-radius: 10px;
+  z-index: 3;
 }
+
+.cardtext strong {
+  display: block;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.cardtext span {
+  color: #444;
+  font-size: 14px;
+}
+
 .cardbadge {
   position: absolute;
   top: 12px;
@@ -106,230 +253,191 @@ h3 { margin: 0 0 12px 0; font-size: 20px; }
   padding: 4px 10px;
   border-radius: 20px;
   font-weight: 600;
-  z-index: 3;
+  z-index: 4;
 }
-  .introtext {
+
+.introtext {
   max-width: 700px;
   color: #555;
   margin: 20px auto 30px auto;
-  text-align: center;
+  text-align: centre;
   font-size: 18px;
-}
-  .section {
-  margin-top: 40px;
-}
-  .airfryer {
-  background-image: url("https://plus.unsplash.com/premium_photo-1711593312216-a8112f04a735?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.4s ease;
-}
-.airfryer:hover {
-  transform: scale(1.05);
-}
-.airfryer::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0,0,0,0.25);
-border-radius: 20px;
+  padding: 0 24px;
 }
 
-.airfryer * {
+.airfryer,
+.earbuds,
+.powerbank,
+.toothbrush,
+.speaker,
+.desklamp,
+.coffee {
+  background-size: cover;
+  background-position: centre;
   position: relative;
-  z-index: 2;
+  overflow: hidden;
 }
+
+.airfryer {
+  background-image: url("https://plus.unsplash.com/premium_photo-1711593312216-a8112f04a735?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
 .earbuds {
   background-image: url("https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.earbud:hover {
-  transform: scale(1.05);
-}
-.earbuds::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0,0,0,0.25);
-border-radius: 20px;
 }
 
-.earbuds * {
-  position: relative;
-  z-index: 2;
-}
- .powerbank {
+.powerbank {
   background-image: url("https://images.unsplash.com/photo-1736513963979-90b024508341?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.powerbank:hover {
-  transform: scale(1.05);
-}
-.powerbank::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0,0,0,0.25);
-border-radius: 20px;
 }
 
-.powerbank * {
-  position: relative;
-  z-index: 2;
-}
-  .toothbrush {
+.toothbrush {
   background-image: url("https://images.unsplash.com/photo-1559671216-bda69517c47f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.toothbrush:hover {
-  transform: scale(1.05);
-}
-.toothbrush::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.25);
-  border-radius: 20px;
 }
 
-.toothbrush * {
-  position: relative;
-  z-index: 2;
-}
- .speaker {
+.speaker {
   background-image: url("https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.speaker:hover {
-  transform: scale(1.05);
-}
-.speaker::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.25);
-  border-radius: 20px;
 }
 
-.speaker * {
-  position: relative;
-  z-index: 2;
-}
-  .desklamp {
+.desklamp {
   background-image: url("https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.desklamp:hover {
-  transform: scale(1.05);
-}
-.desklamp::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.25);
-  border-radius: 20px;
 }
 
-.desklamp * {
-  position: relative;
-  z-index: 2;
-}
-  .coffee {
+.coffee {
   background-image: url("https://images.unsplash.com/photo-1637029436347-e33bf98a5412?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
 }
-.coffee:hover {
-  transform: scale(1.05);
-}
+
+.airfryer::before,
+.earbuds::before,
+.powerbank::before,
+.toothbrush::before,
+.speaker::before,
+.desklamp::before,
 .coffee::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(0,0,0,0.25);
-  border-radius: 20px;
+  z-index: 1;
 }
 
-.coffee * {
-  position: relative;
-  z-index: 2;
+.airfryer:hover,
+.earbuds:hover,
+.powerbank:hover,
+.toothbrush:hover,
+.speaker:hover,
+.desklamp:hover,
+.coffee:hover {
+  transform: scale(1.05);
 }
-  @media (max-width: 700px) {
-  h1 { font-size: 34px; }
-  .image-box { height: 220px; font-size: 20px; }
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .image-box {
+    height: 220px;
+    font-size: 20px;
+  }
+
+  .linkcard {
+    min-height: 190px;
+  }
 }
 </style>
 </head>
+
 <body>
 <header class="hero">
   <div class="wrap">
     <p class="kicker">Top 3 Choices</p>
     <h1>Top 3 Choices | Best Products on Amazon UK</h1>
-    <p class="intro"<p>
-    <div class="notice">This site links to products available on Amazon UK for UK shoppers. As an Amazon Associate I earn from qualifying purchases made through links on this site, at no extra cost to you.</div>
+    <div class="notice">
+      This site links to products available on Amazon UK for UK shoppers. As an Amazon Associate I earn from qualifying purchases made through links on this site, at no extra cost to you.
+    </div>
   </div>
-<p class="introtext">
-Quickly compare the best products in each category. Every guide highlights the best overall choice, best value option and best premium pick.
-</p>
+
+  <p class="introtext">
+    Quickly compare the best products in each category. Every guide highlights the best overall choice, best value option and best premium pick.
+  </p>
+
+  <div class="wrap">
     <section class="section">
-    <h2>Browse our product comparison guides</h2>
-    <div class="listlinks"><a class="linkcard airfryer" href="best-air-fryers.html"><span class="cardbadge">Air Fryers</span><div class="cardtext"><strong>Best Air Fryers UK 2026</strong><br><span style="color:#444">Compare the top 3 air fryers for home cooking</div></span></a><a class="linkcard earbuds" href="best-wireless-earbuds.html"><div class="cardtext"><strong>Best Wireless Earbuds UK 2026</strong><br><span style="color:#444">Compare the top 3 wireless earbuds for everyday listening</div></span></a><a class="linkcard powerbank" href="best-power-banks.html"><div class="cardtext"><strong>Best Power Banks UK 2026</strong><br><span style="color:#444">Compare the top 3 portable chargers for your devices</div></span></a><a class="linkcard toothbrush" href="best-electric-toothbrushes.html"><div class="cardtext"><strong>Best Electric Toothbrushes UK 2026</strong><br><span style="color:#444">Compare the top 3 electric toothbrushes for daily care</div></span></a><a class="linkcard speaker" href="best-bluetooth-speakers.html"><div class="cardtext"><strong>Best Bluetooth Speakers UK 2026</strong><br><span style="color:#444">Find the best bluetooth speaker for music anywhere</div></span></a><a class="linkcard desklamp" href="best-desk-lamps.html"><div class="cardtext"><strong>Best Desk Lamps UK 2026</strong><br><span style="color:#444">Find the best desk lamp for your workspace</div></span></a><a class="linkcard coffee" href="best-coffee-machines.html"><div class="cardtext"><strong>Best Coffee Machines UK 2026</strong><br><span style="color:#444">Compare the top 3 coffee machines for home brewing</div></span></a></div>
-  </section>
+      <h2>Browse our product comparison guides</h2>
+
+      <div class="listlinks">
+        <a class="linkcard airfryer" href="best-air-fryers.html">
+          <span class="cardbadge">Air Fryers</span>
+          <div class="cardtext">
+            <strong>Best Air Fryers UK 2026</strong>
+            <span>Compare the top 3 air fryers for home cooking</span>
+          </div>
+        </a>
+
+        <a class="linkcard earbuds" href="best-wireless-earbuds.html">
+          <span class="cardbadge">Earbuds</span>
+          <div class="cardtext">
+            <strong>Best Wireless Earbuds UK 2026</strong>
+            <span>Compare the top 3 wireless earbuds for everyday listening</span>
+          </div>
+        </a>
+
+        <a class="linkcard powerbank" href="best-power-banks.html">
+          <span class="cardbadge">Power Banks</span>
+          <div class="cardtext">
+            <strong>Best Power Banks UK 2026</strong>
+            <span>Compare the top 3 portable chargers for your devices</span>
+          </div>
+        </a>
+
+        <a class="linkcard toothbrush" href="best-electric-toothbrushes.html">
+          <span class="cardbadge">Toothbrushes</span>
+          <div class="cardtext">
+            <strong>Best Electric Toothbrushes UK 2026</strong>
+            <span>Compare the top 3 electric toothbrushes for daily care</span>
+          </div>
+        </a>
+
+        <a class="linkcard speaker" href="best-bluetooth-speakers.html">
+          <span class="cardbadge">Speakers</span>
+          <div class="cardtext">
+            <strong>Best Bluetooth Speakers UK 2026</strong>
+            <span>Find the best bluetooth speaker for music anywhere</span>
+          </div>
+        </a>
+
+        <a class="linkcard desklamp" href="best-desk-lamps.html">
+          <span class="cardbadge">Desk Lamps</span>
+          <div class="cardtext">
+            <strong>Best Desk Lamps UK 2026</strong>
+            <span>Find the best desk lamp for your workspace</span>
+          </div>
+        </a>
+
+        <a class="linkcard coffee" href="best-coffee-machines.html">
+          <span class="cardbadge">Coffee Machines</span>
+          <div class="cardtext">
+            <strong>Best Coffee Machines UK 2026</strong>
+            <span>Compare the top 3 coffee machines for home brewing</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
 </header>
+
 <main class="wrap">
-<div class="intro">
+  <div class="intro">
+    <p>Top 3 Choices helps UK shoppers quickly compare some of the most popular products available online.</p>
 
-<p>Top 3 Choices helps UK shoppers quickly compare some of the most popular products available online.</p>
+    <p>On every page you will find a clear comparison of the best overall product, the best value option and the best premium pick.</p>
 
-<p>On every page you will find a clear comparison of the best overall product, the best value option and the best premium pick.</p>
+    <p>Each comparison focuses on real world usability, build quality, value for money and everyday performance.</p>
 
-<p>Each comparison focuses on real world usability, build quality, value for money and everyday performance.</p>
+    <p>Whether you are looking for the best air fryer for your kitchen, the best wireless earbuds for everyday listening, or the best coffee machine for home use, our comparison pages provide a straightforward starting point.</p>
 
-<p>Whether you are looking for the best air fryer for your kitchen, the best wireless earbuds for everyday listening, or the best coffee machine for home use, our comparison pages provide a straightforward starting point.</p>
-
-<p>Instead of complicated rankings or hundreds of products, we focus on the top three choices that are most likely to satisfy most buyers.</p>
-
-</div>
+    <p>Instead of complicated rankings or hundreds of products, we focus on the top three choices that are most likely to satisfy most buyers.</p>
+  </div>
 
   <div class="footer-links">
     <a href="privacy.html">Privacy Policy</a>
@@ -337,8 +445,11 @@ Quickly compare the best products in each category. Every guide highlights the b
     <a href="contact.html">Contact</a>
   </div>
 </main>
+
 <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+window.va = window.va || function () {
+  (window.vaq = window.vaq || []).push(arguments);
+};
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
