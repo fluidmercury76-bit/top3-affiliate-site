@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 3 Choices | Compare the Best Products Online</title>
-  <meta name="description" content="Compare the best products online with our simple top 3 guides. Each guide highlights the best overall choice, the best value option and the best premium pick to help you choose with confidence." />
+  <meta name="description" content="Compare the best products online with our simple top 3 guides. Each guide highlights the best overall choice, the best value option and the best premium pick to help you choose with confidence.">
+
   <style>
-    :root {
-      --bg: #f5f5f5;
-      --card: #ffffff;
-      --text: #111111;
-      --muted: #555555;
-      --line: #dddddd;
-      --pill: #ffffff;
-      --pill-border: #cccccc;
-      --accent: #111111;
-      --soft: #fafafa;
-      --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      --radius: 24px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      line-height: 1.6;
     }
 
     * {
       box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
     }
 
     .wrap {
@@ -40,10 +27,11 @@
 
     .hero {
       background: white;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 1px solid #ddd;
       position: relative;
-      overflow: visible;
+      overflow: hidden;
       padding-top: 60px;
+      text-align: center;
     }
 
     .hero::before {
@@ -64,32 +52,26 @@
     .hero .wrap {
       position: relative;
       z-index: 2;
-      text-align: center;
     }
 
     .kicker {
       display: inline-block;
-      padding: 8px 18px;
-      border: 1px solid var(--pill-border);
+      padding: 6px 12px;
+      border: 1px solid #ccc;
       border-radius: 999px;
       font-size: 14px;
-      background: var(--pill);
+      background: #fff;
       font-weight: 700;
     }
 
     h1 {
-      font-size: clamp(36px, 5vw, 54px);
+      font-size: 42px;
       margin: 16px 0;
-      line-height: 1.1;
     }
 
     h2 {
       margin: 0 0 10px 0;
-    }
-
-    h3 {
-      margin: 0 0 12px 0;
-      font-size: 20px;
+      font-size: 30px;
     }
 
     .trustline {
@@ -99,19 +81,18 @@
     }
 
     .notice {
-      background: var(--soft);
-      border: 1px solid var(--line);
+      background: #fafafa;
+      border: 1px solid #ddd;
       border-radius: 16px;
       padding: 14px;
-      color: var(--muted);
-      margin: 20px auto 0;
-      max-width: 860px;
+      color: #555;
+      margin-top: 20px;
     }
 
     .introtext {
-      max-width: 760px;
-      color: var(--muted);
-      margin: 20px auto 18px auto;
+      max-width: 700px;
+      color: #555;
+      margin: 20px auto 30px auto;
       text-align: center;
       font-size: 18px;
       padding: 0 24px;
@@ -119,107 +100,135 @@
 
     .section {
       background: white;
-      border: 1px solid var(--line);
+      border: 1px solid #ddd;
       border-radius: 24px;
       padding: 24px;
       margin-top: 40px;
     }
 
-    .section h2 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .section-intro {
+    .sectionintro {
       max-width: 760px;
-      margin: 0 auto 22px;
+      margin: 0 auto 24px;
       text-align: center;
-      color: var(--muted);
+      color: #555;
       font-size: 18px;
     }
 
-    .pill-grid {
-      display: flex;
-      flex-wrap: wrap;
+      .categorygrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 220px);
       justify-content: center;
-      gap: 12px;
-      margin-top: 22px;
-      margin-bottom: 8px;
-      align-items: center;
+      gap: 20px;
+      margin-top: 28px;
+      align-items: start;
+      overflow: visible;
     }
 
-    .category-card {
-      position: relative;
-      display: inline-block;
-    }
-
-    .pill-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 24px;
-      min-width: 160px;
-      border-radius: 999px;
-      border: 1px solid var(--pill-border);
-      background: #fff;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
-      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-    }
-
-    .pill-link:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-      background: #fafafa;
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: 110%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-6px);
-      width: 240px;
+    .categorycard {
+      background: white;
       border: 1px solid #ddd;
-      border-radius: 18px;
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-      padding: 10px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.18s ease, transform 0.18s ease;
-      z-index: 50;
-      text-align: left;
-    }
-
-    .dropdown-menu a {
-      display: block;
-      padding: 10px 12px;
-      border-radius: 12px;
-      color: var(--text);
+      border-radius: 20px;
       text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
+      color: #111;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+      min-height: 130px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      background-size: cover;
+      background-position: center;
     }
 
-    .dropdown-menu a:hover {
-      background: #f4f4f4;
+    .categorycard:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
-    .category-card:hover .dropdown-menu {
+    .categorywrap {
+      position: relative;
+      overflow: visible;
+    }
+
+    .categorymenu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      padding: 8px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      z-index: 20;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    }
+
+    .categorywrap:hover .categorymenu {
       opacity: 1;
-      transform: translateX(-50%) translateY(0);
-      pointer-events: auto;
+      visibility: visible;
+      transform: translateY(0);
     }
 
-    .notice-mini {
-      max-width: 760px;
-      margin: 18px auto 0;
-      color: #494949;
-      font-size: 17px;
-      text-align: center;
+    .categorymenu a {
+      display: block;
+      text-decoration: none;
+      color: #111;
+      padding: 9px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      background: transparent;
+    }
+
+    .categorymenu a:hover {
+      background: #f5f5f5;
+    }
+
+    .categorycard::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.25);
+      z-index: 1;
+    }
+
+    .cardbadge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,0.85);
+      color: white;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+      z-index: 4;
+    }
+
+    .cardtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      background: rgba(255,255,255,0.75);
+      padding: 10px 14px;
+      border-radius: 10px;
+      z-index: 3;
+    }
+
+    .cardtext strong {
+      display: block;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .cardtext span {
+      color: #444;
+      font-size: 14px;
     }
 
     .listlinks {
@@ -248,70 +257,49 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
-    .cardtext {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      right: 15px;
-      background: rgba(255,255,255,0.75);
-      padding: 10px 14px;
-      border-radius: 10px;
-      z-index: 3;
+    .kitchen {
+      background-image: url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop");
     }
 
-    .cardtext strong {
-      display: block;
-      color: #111;
-      margin-bottom: 4px;
+    .bathroom {
+      background-image: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop");
     }
 
-    .cardtext span {
-      color: #444;
-      font-size: 14px;
+    .homecomfort {
+      background-image: url("https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200&auto=format&fit=crop");
     }
 
-    .cardbadge {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      background: rgba(0,0,0,0.85);
-      color: white;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-weight: 600;
-      z-index: 4;
+    .technology {
+      background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop");
     }
 
-    .airfryer,
-    .earbuds,
-    .powerbank,
-    .toothbrush,
-    .speaker,
-    .desklamp,
-    .coffee,
-    .meditation {
+    .outdoor {
+      background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop");
+    }
+
+    .stillness {
+      background-image: url("https://images.unsplash.com/photo-1593810450967-f9c42742e326?q=80&w=1200&auto=format&fit=crop");
+    }
+
+    .earbuds {
+      background-image: url("https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop");
       background-size: cover;
       background-position: center;
-      position: relative;
-      overflow: hidden;
     }
 
-    .airfryer { background-image: url("https://plus.unsplash.com/premium_photo-1711593312216-a8112f04a735?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .earbuds { background-image: url("https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .powerbank { background-image: url("https://images.unsplash.com/photo-1736513963979-90b024508341?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .toothbrush { background-image: url("https://images.unsplash.com/photo-1559671216-bda69517c47f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .speaker { background-image: url("https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .desklamp { background-image: url("https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .coffee { background-image: url("https://images.unsplash.com/photo-1637029436347-e33bf98a5412?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .meditation { background-image: url("https://images.unsplash.com/photo-1597307509190-e33cb9fb3ff7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .coffee {
+      background-image: url("https://images.unsplash.com/photo-1637029436347-e33bf98a5412?q=80&w=880&auto=format&fit=crop");
+      background-size: cover;
+      background-position: center;
+    }
 
-    .airfryer::before,
+    .meditation {
+      background-image: url("https://images.unsplash.com/photo-1597307509190-e33cb9fb3ff7?q=80&w=1170&auto=format&fit=crop");
+      background-size: cover;
+      background-position: center;
+    }
+
     .earbuds::before,
-    .powerbank::before,
-    .toothbrush::before,
-    .speaker::before,
-    .desklamp::before,
     .coffee::before,
     .meditation::before {
       content: "";
@@ -363,7 +351,7 @@
 
     .boxtitle h3 {
       margin: 0;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .badge {
@@ -374,9 +362,17 @@
       border-radius: 20px;
     }
 
-    .badge.overall { background: #f6d27a; color: #111; }
-    .badge.value { background: #d8f3dc; color: #111; }
-    .badge.premium { background: #e0e7ff; color: #111; }
+    .badge.overall {
+      background: #f6d27a;
+    }
+
+    .badge.value {
+      background: #d8f3dc;
+    }
+
+    .badge.premium {
+      background: #e0e7ff;
+    }
 
     .footer-links {
       margin-top: 40px;
@@ -392,47 +388,44 @@
       margin-right: 16px;
     }
 
-    @media (max-width: 900px) {
-      .aboutgrid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     @media (max-width: 700px) {
       h1 {
         font-size: 34px;
       }
 
-      .linkcard {
-        min-height: 190px;
+      .categorycard {
+        min-height: 120px;
       }
 
-      .pill-grid {
-        display: grid;
+      .linkcard {
+        min-height: 210px;
+      }
+
+      .aboutgrid {
         grid-template-columns: 1fr;
       }
 
-      .pill-link {
-        width: 100%;
-      }
-
-      .dropdown-menu {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
+      .categorymenu {
+        position: static;
         opacity: 1;
-        pointer-events: auto;
-        width: 100%;
+        visibility: visible;
+        transform: none;
         margin-top: 8px;
       }
+    }
 
-      .category-card:hover .dropdown-menu {
-        transform: none;
+      .categorycard,
+      .linkcard {
+        min-height: 210px;
+      }
+
+      .aboutgrid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
   <header class="hero">
     <div class="wrap">
@@ -451,78 +444,142 @@
       <p class="introtext">
         Quickly compare the best products in each category. Every guide highlights the best overall choice, the best value option and the best premium pick.
       </p>
-
-      <section class="section">
-        <h2>Browse by category</h2>
-        <p class="section-intro">
-          Choose a category to view all guides in that area, or hover over a category to jump straight to a specific comparison page.
-        </p>
-
-        <div class="pill-grid">
-          <div class="category-card">
-            <a class="pill-link" href="/kitchen.html">Kitchen</a>
-            <div class="dropdown-menu">
-              <a href="/best-air-fryers.html">Best Air Fryers UK</a>
-              <a href="/best-coffee-machines.html">Best Coffee Machines UK</a>
-              <a href="/best-blenders.html">Best Blenders UK</a>
-            </div>
-          </div>
-
-          <div class="category-card">
-            <a class="pill-link" href="/bathroom.html">Bathroom</a>
-            <div class="dropdown-menu">
-              <a href="/best-electric-toothbrushes.html">Best Electric Toothbrushes UK</a>
-              <a href="/best-shower-heads.html">Best Shower Heads UK</a>
-              <a href="/best-bathroom-scales.html">Best Bathroom Scales UK</a>
-            </div>
-          </div>
-
-          <div class="category-card">
-            <a class="pill-link" href="/home-comfort.html">Home Comfort</a>
-            <div class="dropdown-menu">
-              <a href="/best-dehumidifiers.html">Best Dehumidifiers UK</a>
-              <a href="/best-fans.html">Best Fans UK</a>
-              <a href="/best-heaters.html">Best Heaters UK</a>
-            </div>
-          </div>
-
-          <div class="category-card">
-            <a class="pill-link" href="/technology.html">Technology</a>
-            <div class="dropdown-menu">
-              <a href="/best-wireless-earbuds.html">Best Wireless Earbuds UK</a>
-              <a href="/best-bluetooth-speakers.html">Best Bluetooth Speakers UK</a>
-              <a href="/best-desk-lamps.html">Best Desk Lamps UK</a>
-            </div>
-          </div>
-
-          <div class="category-card">
-            <a class="pill-link" href="/outdoor-living.html">Outdoor Living</a>
-            <div class="dropdown-menu">
-              <a href="/best-patio-heaters.html">Best Patio Heaters UK</a>
-              <a href="/best-outdoor-lights.html">Best Outdoor Lights UK</a>
-              <a href="/best-garden-tools.html">Best Garden Tools UK</a>
-            </div>
-          </div>
-
-          <div class="category-card">
-            <a class="pill-link" href="/stillness-and-clarity.html">Stillness and Clarity</a>
-            <div class="dropdown-menu">
-              <a href="/best-meditation-cushions.html">Best Meditation Cushions UK</a>
-              <a href="/best-yoga-mats.html">Best Yoga Mats UK</a>
-              <a href="/best-singing-bowls.html">Best Singing Bowls UK</a>
-            </div>
-          </div>
-        </div>
-
-        <p class="notice-mini">
-          Each category links to its own page with all comparison guides for that area.
-        </p>
-
-        </section>
     </div>
   </header>
 
   <main class="wrap">
+    <section class="section">
+      <h2>Browse by category</h2>
+      <p class="sectionintro">
+        Choose a category to explore all guides in that area.
+      </p>
+
+      <div class="categorygrid">
+        <div class="categorywrap">
+          <a class="categorycard kitchen" href="kitchen.html">
+            <span class="cardbadge">Kitchen</span>
+            <div class="cardtext">
+              <strong>Kitchen Guides</strong>
+              <span>Air fryers, coffee machines and more</span>
+            </div>
+          </a>
+          <div class="categorymenu">
+            <a href="best-air-fryers.html">Best Air Fryers UK</a>
+            <a href="best-coffee-machines.html">Best Coffee Machines UK</a>
+            <a href="best-blenders.html">Best Blenders UK</a>
+          </div>
+        </div>
+
+        <div class="categorywrap">
+          <a class="categorycard bathroom" href="bathroom.html">
+            <span class="cardbadge">Bathroom</span>
+            <div class="cardtext">
+              <strong>Bathroom Guides</strong>
+              <span>Toothbrushes, scales and shower heads</span>
+            </div>
+          </a>
+          <div class="categorymenu">
+            <a href="best-electric-toothbrushes.html">Best Electric Toothbrushes UK</a>
+            <a href="best-shower-heads.html">Best Shower Heads UK</a>
+            <a href="best-bathroom-scales.html">Best Bathroom Scales UK</a>
+          </div>
+        </div>
+
+        <div class="categorywrap">
+          <a class="categorycard homecomfort" href="home-comfort.html">
+            <span class="cardbadge">Home Comfort</span>
+            <div class="cardtext">
+              <strong>Home Comfort</strong>
+              <span>Fans, heaters and dehumidifiers</span>
+            </div>
+          </a>
+          <div class="categorymenu">
+            <a href="best-dehumidifiers.html">Best Dehumidifiers UK</a>
+            <a href="best-fans.html">Best Fans UK</a>
+            <a href="best-heaters.html">Best Heaters UK</a>
+          </div>
+        </div>
+
+        <div class="categorywrap">
+          <a class="categorycard technology" href="technology.html">
+            <span class="cardbadge">Technology</span>
+            <div class="cardtext">
+              <strong>Technology</strong>
+              <span>Earbuds, speakers and gadgets</span>
+            </div>
+          </a>
+          <div class="categorymenu">
+            <a href="best-wireless-earbuds.html">Best Wireless Earbuds UK</a>
+            <a href="best-bluetooth-speakers.html">Best Bluetooth Speakers UK</a>
+            <a href="best-desk-lamps.html">Best Desk Lamps UK</a>
+          </div>
+        </div>
+
+        <div class="categorywrap">
+          <a class="categorycard outdoor" href="outdoor-living.html">
+            <span class="cardbadge">Outdoor Living</span>
+            <div class="cardtext">
+              <strong>Outdoor Living</strong>
+              <span>Garden and patio essentials</span>
+            </div>
+          </a>
+          <div class="categorymenu">
+            <a href="best-patio-heaters.html">Best Patio Heaters UK</a>
+            <a href="best-outdoor-lights.html">Best Outdoor Lights UK</a>
+            <a href="best-garden-tools.html">Best Garden Tools UK</a>
+          </div>
+        </div>
+
+        <div class="categorywrap">
+          <a class="categorycard stillness" href="stillness-and-clarity.html">
+            <span class="cardbadge">Stillness and Clarity</span>
+            <div class="cardtext">
+              <strong>Stillness and Clarity</strong>
+              <span>Meditation and mindful living</span>
+            </div>
+          </a>
+          <div class="categorymenu">
+            <a href="best-meditation-cushions.html">Best Meditation Cushions UK</a>
+            <a href="best-yoga-mats.html">Best Yoga Mats UK</a>
+            <a href="best-singing-bowls.html">Best Singing Bowls UK</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Popular Guides</h2>
+      <p class="sectionintro">
+        Start with three of the most popular guides on the site.
+      </p>
+
+      <div class="listlinks">
+        <a class="linkcard earbuds" href="best-wireless-earbuds.html">
+          <span class="cardbadge">Earbuds</span>
+          <div class="cardtext">
+            <strong>Best Wireless Earbuds</strong>
+            <span>Compare the top 3 wireless earbuds for everyday listening</span>
+          </div>
+        </a>
+
+        <a class="linkcard coffee" href="best-coffee-machines.html">
+          <span class="cardbadge">Coffee Machines</span>
+          <div class="cardtext">
+            <strong>Best Coffee Machines</strong>
+            <span>Compare the top coffee machines for home brewing</span>
+          </div>
+        </a>
+
+        <a class="linkcard meditation" href="best-meditation-cushions.html">
+          <span class="cardbadge">Meditation</span>
+          <div class="cardtext">
+            <strong>Best Meditation Cushions</strong>
+            <span>Compare the best meditation cushions for posture and comfort</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <section class="about">
       <h2>How Top 3 Choices Works</h2>
 
@@ -564,12 +621,5 @@
       <a href="contact.html">Contact</a>
     </div>
   </main>
-
-  <script>
-    window.va = window.va || function () {
-      (window.vaq = window.vaq || []).push(arguments);
-    };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
