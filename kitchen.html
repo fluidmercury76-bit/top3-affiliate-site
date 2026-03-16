@@ -1,285 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kitchen | Top 3 Choices</title>
-  <meta name="description" content="Browse our kitchen product guides, including the best air fryers, coffee machines and blenders in the UK." />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * {
-      box-sizing: border-box;
-    }
+<title>Kitchen | Top 3 Choices</title>
 
-    .wrap {
-      max-width: 1150px;
-      margin: 0 auto;
-      padding: 24px;
-    }
+<meta name="description" content="Browse our kitchen product guides, including the best air fryers, coffee machines and blenders in the UK.">
 
-    .hero {
-      padding: 24px 24px 0;
-    }
+<style>
 
-    .heroimage {
-      position: relative;
-      min-height: 430px;
-      border-radius: 28px;
-      overflow: hidden;
-      background: url("images/kitchen-hero.jpg") center center / cover no-repeat;
-      display: flex;
-      align-items: center;
-      border: 1px solid #ddd;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    }
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+color:#111;
+line-height:1.6;
+}
 
-    .herooverlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.42);
-    }
+*{
+box-sizing:border-box;
+}
 
-    .herocontent {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      text-align: center;
-      color: white;
-      padding: 40px 24px;
-    }
+.wrap{
+max-width:1150px;
+margin:0 auto;
+padding:24px;
+}
 
-    .kicker {
-      display: inline-block;
-      padding: 6px 12px;
-      border: 1px solid rgba(255, 255, 255, 0.55);
-      border-radius: 999px;
-      font-size: 14px;
-      background: rgba(255, 255, 255, 0.14);
-      font-weight: 700;
-      backdrop-filter: blur(2px);
-    }
+/* HERO */
 
-    h1 {
-      font-size: 46px;
-      margin: 16px 0 12px;
-      line-height: 1.15;
-    }
+.hero{
+padding:24px 24px 0;
+}
 
-    .intro {
-      max-width: 760px;
-      margin: 0 auto;
-      color: rgba(255, 255, 255, 0.92);
-      font-size: 18px;
-    }
+.heroimage{
+position:relative;
+min-height:440px;
+border-radius:28px;
+overflow:hidden;
+background:url("images/kitchen-hero.jpg") center center / cover no-repeat;
+display:flex;
+align-items:center;
+border:1px solid #ddd;
+box-shadow:0 12px 32px rgba(0,0,0,0.08);
+}
 
-    .backlink {
-      display: inline-block;
-      margin-top: 18px;
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-    }
+.herooverlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.25);
+}
 
-    .backlink:hover {
-      text-decoration: underline;
-    }
+/* TEXT CARD */
 
-    .section {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 24px;
-      padding: 28px;
-      margin-top: 36px;
-    }
+.herocard{
+position:relative;
+z-index:2;
+max-width:720px;
+margin:0 auto;
+text-align:center;
 
-    .section h2 {
-      margin: 0 0 10px;
-      font-size: 30px;
-      text-align: center;
-    }
+padding:34px 40px;
 
-    .sectionintro {
-      max-width: 760px;
-      margin: 0 auto 28px;
-      text-align: center;
-      color: #555;
-      font-size: 18px;
-    }
+border-radius:22px;
 
-    .guides {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
+background:linear-gradient(
+135deg,
+rgba(255,255,255,0.88),
+rgba(255,232,170,0.75)
+);
 
-    .guidecard {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    }
+backdrop-filter:blur(6px);
 
-    .guidecard:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
-      border-color: #cfcfcf;
-    }
+box-shadow:0 10px 28px rgba(0,0,0,0.15);
+}
 
-    .cardimage {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-      background: #eee;
-    }
+.kicker{
+display:inline-block;
+padding:6px 12px;
+border:1px solid rgba(0,0,0,0.15);
+border-radius:999px;
+font-size:14px;
+background:rgba(255,255,255,0.9);
+font-weight:700;
+}
 
-    .cardcontent {
-      padding: 22px;
-    }
+h1{
+font-size:46px;
+margin:16px 0 12px;
+line-height:1.15;
+}
 
-    .guidecard h3 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      line-height: 1.3;
-    }
+.intro{
+color:#333;
+font-size:18px;
+}
 
-    .guidecard p {
-      margin: 0 0 18px;
-      color: #555;
-      font-size: 16px;
-    }
+.backlink{
+display:inline-block;
+margin-top:18px;
+color:#111;
+text-decoration:none;
+font-weight:700;
+}
 
-    .button {
-      display: inline-block;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 12px 16px;
-      border-radius: 12px;
-      font-weight: 700;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
+.backlink:hover{
+text-decoration:underline;
+}
 
-    .button:hover {
-      background: #222;
-      transform: translateY(-1px);
-    }
+/* CONTENT SECTION */
 
-    .footer-links {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      padding-bottom: 20px;
-    }
+.section{
+background:white;
+border:1px solid #ddd;
+border-radius:24px;
+padding:28px;
+margin-top:36px;
+}
 
-    .footer-links a {
-      color: #111;
-      text-decoration: none;
-      margin: 0 10px;
-    }
+.section h2{
+margin:0 0 10px;
+font-size:30px;
+text-align:center;
+}
 
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
+.sectionintro{
+max-width:760px;
+margin:0 auto 28px;
+text-align:center;
+color:#555;
+font-size:18px;
+}
 
-    @media (max-width: 700px) {
-      .hero {
-        padding: 16px 16px 0;
-      }
+/* GUIDE GRID */
 
-      .heroimage {
-        min-height: 340px;
-        border-radius: 22px;
-      }
+.guides{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
 
-      h1 {
-        font-size: 34px;
-      }
+.guidecard{
+background:#fff;
+border:1px solid #ddd;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 4px 14px rgba(0,0,0,0.05);
+transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
 
-      .intro {
-        font-size: 16px;
-      }
+.guidecard:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 36px rgba(0,0,0,0.14);
+border-color:#cfcfcf;
+}
 
-      .section {
-        padding: 22px;
-      }
+.cardimage{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+background:#eee;
+}
 
-      .cardimage {
-        height: 200px;
-      }
-    }
-  </style>
+.cardcontent{
+padding:22px;
+}
+
+.guidecard h3{
+margin:0 0 10px;
+font-size:24px;
+}
+
+.guidecard p{
+margin:0 0 18px;
+color:#555;
+font-size:16px;
+}
+
+/* BUTTON */
+
+.button{
+display:inline-block;
+background:#111;
+color:white;
+text-decoration:none;
+padding:12px 16px;
+border-radius:12px;
+font-weight:700;
+transition:background .2s ease,transform .2s ease;
+}
+
+.button:hover{
+background:#222;
+transform:translateY(-1px);
+}
+
+/* FOOTER */
+
+.footer-links{
+margin-top:40px;
+text-align:center;
+font-size:14px;
+color:#555;
+padding-bottom:20px;
+}
+
+.footer-links a{
+color:#111;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero{
+padding:16px 16px 0;
+}
+
+.heroimage{
+min-height:340px;
+border-radius:22px;
+}
+
+.herocard{
+padding:26px 24px;
+}
+
+h1{
+font-size:34px;
+}
+
+.intro{
+font-size:16px;
+}
+
+.section{
+padding:22px;
+}
+
+.cardimage{
+height:200px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-  <header class="hero">
-    <div class="heroimage">
-      <div class="herooverlay"></div>
+<header class="hero">
 
-      <div class="wrap herocontent">
-        <p class="kicker">Top 3 Choices</p>
-        <h1>Kitchen</h1>
-        <p class="intro">
-          Browse our kitchen buying guides to quickly compare the best products for cooking, coffee and food preparation.
-        </p>
-        <a class="backlink" href="index.html">← Back to homepage</a>
-      </div>
-    </div>
-  </header>
+<div class="heroimage">
 
-  <main class="wrap">
-    <section class="section">
-      <h2>Kitchen guides</h2>
-      <p class="sectionintro">
-        Each guide highlights the best overall, best value and premium pick to help you choose with confidence.
-      </p>
+<div class="herooverlay"></div>
 
-      <div class="guides">
-        <article class="guidecard">
-          <img class="cardimage" src="images/air-fryer.jpg" alt="Air fryer on a kitchen counter" />
-          <div class="cardcontent">
-            <h3>Best Air Fryers UK</h3>
-            <p>Compare the top 3 air fryers for quick, efficient home cooking and everyday ease of use.</p>
-            <a class="button" href="best-air-fryers.html">View guide</a>
-          </div>
-        </article>
+<div class="wrap">
 
-        <article class="guidecard">
-          <img class="cardimage" src="images/coffee-machine.jpg" alt="Coffee machine in a modern kitchen" />
-          <div class="cardcontent">
-            <h3>Best Coffee Machines UK</h3>
-            <p>Find the best coffee machines for home brewing, simple controls, great taste and value.</p>
-            <a class="button" href="best-coffee-machines.html">View guide</a>
-          </div>
-        </article>
+<div class="herocard">
 
-        <article class="guidecard">
-          <img class="cardimage" src="images/blender.jpg" alt="Blender with ingredients on a kitchen worktop" />
-          <div class="cardcontent">
-            <h3>Best Blenders UK</h3>
-            <p>Discover the best blenders for smoothies, soups and everyday kitchen use at home.</p>
-            <a class="button" href="best-blenders.html">View guide</a>
-          </div>
-        </article>
-      </div>
-    </section>
+<p class="kicker">Top 3 Choices</p>
 
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </main>
+<h1>Kitchen</h1>
+
+<p class="intro">
+Browse our kitchen buying guides to quickly compare the best products for cooking, coffee and food preparation.
+</p>
+
+<a class="backlink" href="index.html">← Back to homepage</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<main class="wrap">
+
+<section class="section">
+
+<h2>Kitchen guides</h2>
+
+<p class="sectionintro">
+Each guide highlights the best overall, best value and premium pick to help you choose with confidence.
+</p>
+
+<div class="guides">
+
+<article class="guidecard">
+
+<img class="cardimage" src="images/air-fryer.jpg" alt="Air fryer on kitchen counter">
+
+<div class="cardcontent">
+
+<h3>Best Air Fryers UK</h3>
+
+<p>Compare the top 3 air fryers for quick efficient home cooking and everyday ease of use.</p>
+
+<a class="button" href="best-air-fryers.html">View guide</a>
+
+</div>
+
+</article>
+
+<article class="guidecard">
+
+<img class="cardimage" src="images/coffee-machine.jpg" alt="Coffee machine in kitchen">
+
+<div class="cardcontent">
+
+<h3>Best Coffee Machines UK</h3>
+
+<p>Find the best coffee machines for home brewing simple controls great taste and value.</p>
+
+<a class="button" href="best-coffee-machines.html">View guide</a>
+
+</div>
+
+</article>
+
+<article class="guidecard">
+
+<img class="cardimage" src="images/blender.jpg" alt="Blender on kitchen worktop">
+
+<div class="cardcontent">
+
+<h3>Best Blenders UK</h3>
+
+<p>Discover the best blenders for smoothies soups and everyday kitchen use.</p>
+
+<a class="button" href="best-blenders.html">View guide</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<div class="footer-links">
+
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</main>
 
 </body>
 </html>
