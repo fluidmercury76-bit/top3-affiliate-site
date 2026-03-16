@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top 3 Choices | Compare the Best Products Online</title>
-  <meta name="description" content="Compare the best products online with our simple top 3 guides. Each guide highlights the best overall choice, the best value option and the best premium pick to help you choose with confidence.">
-
+  <meta name="description" content="Compare the best products online with our simple top 3 guides. Each guide highlights the best overall choice, the best value option and the best premium pick to help you choose with confidence." />
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      line-height: 1.6;
+    :root {
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --line: #dddddd;
+      --pill: #ffffff;
+      --pill-border: #cccccc;
+      --accent: #111111;
+      --soft: #fafafa;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      --radius: 24px;
     }
 
     * {
       box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
 
     .wrap {
@@ -27,9 +40,9 @@
 
     .hero {
       background: white;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--line);
       position: relative;
-      overflow: hidden;
+      overflow: visible;
       padding-top: 60px;
     }
 
@@ -51,20 +64,23 @@
     .hero .wrap {
       position: relative;
       z-index: 2;
+      text-align: center;
     }
 
     .kicker {
       display: inline-block;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
+      padding: 8px 18px;
+      border: 1px solid var(--pill-border);
       border-radius: 999px;
       font-size: 14px;
-      background: #fff;
+      background: var(--pill);
+      font-weight: 700;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: clamp(36px, 5vw, 54px);
       margin: 16px 0;
+      line-height: 1.1;
     }
 
     h2 {
@@ -76,178 +92,134 @@
       font-size: 20px;
     }
 
-    .intro {
-      font-size: 18px;
-      color: #555;
-      max-width: 800px;
+    .trustline {
+      font-size: 15px;
+      color: #666;
+      margin-top: 8px;
     }
 
     .notice {
-      background: #fafafa;
-      border: 1px solid #ddd;
+      background: var(--soft);
+      border: 1px solid var(--line);
       border-radius: 16px;
       padding: 14px;
-      color: #555;
-      margin-top: 20px;
+      color: var(--muted);
+      margin: 20px auto 0;
+      max-width: 860px;
     }
 
-    .boxtitle {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .boxtitle h3 {
-      margin: 0;
-      font-size: 20px;
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 6px 12px;
-      border-radius: 20px;
-    }
-
-    .badge.overall {
-      background: #f6d27a;
-    }
-
-    .badge.value {
-      background: #d8f3dc;
-    }
-
-    .badge.premium {
-      background: #e0e7ff;
+    .introtext {
+      max-width: 760px;
+      color: var(--muted);
+      margin: 20px auto 18px auto;
+      text-align: center;
+      font-size: 18px;
+      padding: 0 24px;
     }
 
     .section {
       background: white;
-      border: 1px solid #ddd;
+      border: 1px solid var(--line);
       border-radius: 24px;
       padding: 24px;
       margin-top: 40px;
     }
 
-    .compare-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 18px;
-      border: 1px solid #ddd;
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 8px;
     }
 
-    .compare-table th,
-    .compare-table td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: left;
-      vertical-align: top;
+    .section-intro {
+      max-width: 760px;
+      margin: 0 auto 22px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 18px;
     }
 
-    .compare-table th {
-      background: #fafafa;
-    }
-
-    .top-picks {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
-      margin-top: 18px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 24px;
-      padding: 22px;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: bold;
-      background: #111;
-      color: white;
-      margin-bottom: 18px;
-    }
-
-    .image-box {
-      height: 260px;
-      border: 1px solid #ddd;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+    .pill-grid {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 22px;
+      margin-bottom: 8px;
+      align-items: center;
+    }
+
+    .category-card {
+      position: relative;
+      display: inline-block;
+    }
+
+    .pill-link {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 20px;
-      color: #444;
-      font-size: 22px;
-      margin-bottom: 20px;
+      padding: 14px 24px;
+      min-width: 160px;
+      border-radius: 999px;
+      border: 1px solid var(--pill-border);
+      background: #fff;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
     }
 
-    .summary {
-      color: #444;
-      margin-bottom: 14px;
-    }
-
-    .bestfor {
-      color: #555;
-      margin-bottom: 18px;
-    }
-
-    .box {
-      border: 1px solid #e2e2e2;
-      border-radius: 16px;
-      padding: 14px 16px;
+    .pill-link:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
       background: #fafafa;
-      margin-bottom: 14px;
     }
 
-    .box h4 {
-      margin: 0 0 10px 0;
+    .dropdown-menu {
+      position: absolute;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-6px);
+      width: 240px;
+      border: 1px solid #ddd;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      padding: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      z-index: 50;
+      text-align: left;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .dropdown-menu a:hover {
+      background: #f4f4f4;
+    }
+
+    .category-card:hover .dropdown-menu {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
+    .notice-mini {
+      max-width: 760px;
+      margin: 18px auto 0;
+      color: #494949;
       font-size: 17px;
-    }
-
-    .pros h4 {
-      color: #1d6b3a;
-    }
-
-    .cons h4 {
-      color: #9a1f1f;
-    }
-
-    .box ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 10px;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 13px 18px;
-      border-radius: 14px;
-      font-weight: bold;
-    }
-
-    .footer-links {
-      margin-top: 40px;
-      padding: 10px 0 40px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    .footer-links a {
-      color: #111;
-      text-decoration: none;
-      margin-right: 16px;
+      text-align: center;
     }
 
     .listlinks {
@@ -255,48 +227,6 @@
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 26px;
       margin-top: 32px;
-    }
-
-    .about {
-      max-width: 950px;
-      margin: 70px auto;
-      text-align: center;
-    }
-
-    .about h2 {
-      font-size: 26px;
-      margin-bottom: 18px;
-    }
-
-    .aboutintro {
-      max-width: 720px;
-      margin: 0 auto 40px auto;
-      line-height: 1.7;
-      color: #444;
-    }
-
-    .aboutgrid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .aboutbox {
-      background: white;
-      padding: 26px;
-      border-radius: 12px;
-      box-shadow: 0 5px 16px rgba(0,0,0,0.06);
-    }
-
-    .aboutbox h3 {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    .aboutbox p {
-      font-size: 15px;
-      color: #555;
-      line-height: 1.6;
     }
 
     .linkcard {
@@ -316,12 +246,6 @@
     .linkcard:hover {
       transform: translateY(-6px) scale(1.02);
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
-
-    .trustline {
-      font-size: 15px;
-      color: #666;
-      margin-top: 8px;
     }
 
     .cardtext {
@@ -359,15 +283,6 @@
       z-index: 4;
     }
 
-    .introtext {
-      max-width: 700px;
-      color: #555;
-      margin: 20px auto 30px auto;
-      text-align: center;
-      font-size: 18px;
-      padding: 0 24px;
-    }
-
     .airfryer,
     .earbuds,
     .powerbank,
@@ -382,37 +297,14 @@
       overflow: hidden;
     }
 
-    .airfryer {
-      background-image: url("https://plus.unsplash.com/premium_photo-1711593312216-a8112f04a735?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .earbuds {
-      background-image: url("https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .powerbank {
-      background-image: url("https://images.unsplash.com/photo-1736513963979-90b024508341?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .toothbrush {
-      background-image: url("https://images.unsplash.com/photo-1559671216-bda69517c47f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .speaker {
-      background-image: url("https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .desklamp {
-      background-image: url("https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .coffee {
-      background-image: url("https://images.unsplash.com/photo-1637029436347-e33bf98a5412?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
-
-    .meditation {
-      background-image: url("https://images.unsplash.com/photo-1597307509190-e33cb9fb3ff7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    }
+    .airfryer { background-image: url("https://plus.unsplash.com/premium_photo-1711593312216-a8112f04a735?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .earbuds { background-image: url("https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .powerbank { background-image: url("https://images.unsplash.com/photo-1736513963979-90b024508341?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .toothbrush { background-image: url("https://images.unsplash.com/photo-1559671216-bda69517c47f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .speaker { background-image: url("https://images.unsplash.com/photo-1632073383420-01461da1e082?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .desklamp { background-image: url("https://images.unsplash.com/photo-1526040652367-ac003a0475fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .coffee { background-image: url("https://images.unsplash.com/photo-1637029436347-e33bf98a5412?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+    .meditation { background-image: url("https://images.unsplash.com/photo-1597307509190-e33cb9fb3ff7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
 
     .airfryer::before,
     .earbuds::before,
@@ -429,15 +321,81 @@
       z-index: 1;
     }
 
-    .airfryer:hover,
-    .earbuds:hover,
-    .powerbank:hover,
-    .toothbrush:hover,
-    .speaker:hover,
-    .desklamp:hover,
-    .coffee:hover,
-    .meditation:hover {
-      transform: scale(1.05);
+    .about {
+      max-width: 950px;
+      margin: 70px auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .aboutintro {
+      max-width: 720px;
+      margin: 0 auto 40px auto;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .aboutgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .aboutbox {
+      background: white;
+      padding: 26px;
+      border-radius: 12px;
+      box-shadow: 0 5px 16px rgba(0,0,0,0.06);
+    }
+
+    .boxtitle {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .boxtitle h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
+    .badge.overall { background: #f6d27a; color: #111; }
+    .badge.value { background: #d8f3dc; color: #111; }
+    .badge.premium { background: #e0e7ff; color: #111; }
+
+    .footer-links {
+      margin-top: 40px;
+      padding: 10px 0 40px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: #111;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .aboutgrid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 700px) {
@@ -445,26 +403,39 @@
         font-size: 34px;
       }
 
-      .image-box {
-        height: 220px;
-        font-size: 20px;
-      }
-
       .linkcard {
         min-height: 190px;
       }
 
-      .aboutgrid {
+      .pill-grid {
+        display: grid;
         grid-template-columns: 1fr;
+      }
+
+      .pill-link {
+        width: 100%;
+      }
+
+      .dropdown-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .category-card:hover .dropdown-menu {
+        transform: none;
       }
     }
   </style>
 </head>
-
 <body>
   <header class="hero">
     <div class="wrap">
-      
       <p class="kicker">Top 3 Choices</p>
 
       <h1>Top 3 Choices | Discover the Best Products Online</h1>
@@ -482,81 +453,77 @@
       </p>
 
       <section class="section">
-        <h2>Browse our product comparison guides</h2>
+        <h2>Browse by category</h2>
+        <p class="section-intro">
+          Choose a category to view all guides in that area, or hover over a category to jump straight to a specific comparison page.
+        </p>
 
-        <div class="listlinks">
-          <a class="linkcard airfryer" href="best-air-fryers.html">
-            <span class="cardbadge">Air Fryers</span>
-            <div class="cardtext">
-              <strong>Best Air Fryers</strong>
-              <span>Compare the top 3 air fryers for home cooking</span>
+        <div class="pill-grid">
+          <div class="category-card">
+            <a class="pill-link" href="/kitchen.html">Kitchen</a>
+            <div class="dropdown-menu">
+              <a href="/best-air-fryers.html">Best Air Fryers UK</a>
+              <a href="/best-coffee-machines.html">Best Coffee Machines UK</a>
+              <a href="/best-blenders.html">Best Blenders UK</a>
             </div>
-          </a>
+          </div>
 
-          <a class="linkcard earbuds" href="best-wireless-earbuds.html">
-            <span class="cardbadge">Earbuds</span>
-            <div class="cardtext">
-              <strong>Best Wireless Earbuds</strong>
-              <span>Compare the top 3 wireless earbuds for everyday listening</span>
+          <div class="category-card">
+            <a class="pill-link" href="/bathroom.html">Bathroom</a>
+            <div class="dropdown-menu">
+              <a href="/best-electric-toothbrushes.html">Best Electric Toothbrushes UK</a>
+              <a href="/best-shower-heads.html">Best Shower Heads UK</a>
+              <a href="/best-bathroom-scales.html">Best Bathroom Scales UK</a>
             </div>
-          </a>
+          </div>
 
-          <a class="linkcard powerbank" href="best-power-banks.html">
-            <span class="cardbadge">Power Banks</span>
-            <div class="cardtext">
-              <strong>Best Power Banks</strong>
-              <span>Compare the top 3 portable chargers for your devices</span>
+          <div class="category-card">
+            <a class="pill-link" href="/home-comfort.html">Home Comfort</a>
+            <div class="dropdown-menu">
+              <a href="/best-dehumidifiers.html">Best Dehumidifiers UK</a>
+              <a href="/best-fans.html">Best Fans UK</a>
+              <a href="/best-heaters.html">Best Heaters UK</a>
             </div>
-          </a>
+          </div>
 
-          <a class="linkcard toothbrush" href="best-electric-toothbrushes.html">
-            <span class="cardbadge">Toothbrushes</span>
-            <div class="cardtext">
-              <strong>Best Electric Toothbrushes</strong>
-              <span>Compare the top 3 electric toothbrushes for daily care</span>
+          <div class="category-card">
+            <a class="pill-link" href="/technology.html">Technology</a>
+            <div class="dropdown-menu">
+              <a href="/best-wireless-earbuds.html">Best Wireless Earbuds UK</a>
+              <a href="/best-bluetooth-speakers.html">Best Bluetooth Speakers UK</a>
+              <a href="/best-desk-lamps.html">Best Desk Lamps UK</a>
             </div>
-          </a>
+          </div>
 
-          <a class="linkcard speaker" href="best-bluetooth-speakers.html">
-            <span class="cardbadge">Speakers</span>
-            <div class="cardtext">
-              <strong>Best Bluetooth Speakers</strong>
-              <span>Find the best bluetooth speakers for music anywhere</span>
+          <div class="category-card">
+            <a class="pill-link" href="/outdoor-living.html">Outdoor Living</a>
+            <div class="dropdown-menu">
+              <a href="/best-patio-heaters.html">Best Patio Heaters UK</a>
+              <a href="/best-outdoor-lights.html">Best Outdoor Lights UK</a>
+              <a href="/best-garden-tools.html">Best Garden Tools UK</a>
             </div>
-          </a>
+          </div>
 
-          <a class="linkcard desklamp" href="best-desk-lamps.html">
-            <span class="cardbadge">Desk Lamps</span>
-            <div class="cardtext">
-              <strong>Best Desk Lamps</strong>
-              <span>Find the best desk lamps for your workspace</span>
+          <div class="category-card">
+            <a class="pill-link" href="/stillness-and-clarity.html">Stillness and Clarity</a>
+            <div class="dropdown-menu">
+              <a href="/best-meditation-cushions.html">Best Meditation Cushions UK</a>
+              <a href="/best-yoga-mats.html">Best Yoga Mats UK</a>
+              <a href="/best-singing-bowls.html">Best Singing Bowls UK</a>
             </div>
-          </a>
-
-          <a class="linkcard coffee" href="best-coffee-machines.html">
-            <span class="cardbadge">Coffee Machines</span>
-            <div class="cardtext">
-              <strong>Best Coffee Machines</strong>
-              <span>Compare the top coffee machines for home brewing</span>
-            </div>
-          </a>
-
-          <a class="linkcard meditation" href="best-meditation-cushions.html">
-            <span class="cardbadge">Meditation</span>
-            <div class="cardtext">
-              <strong>Best Meditation Cushions</strong>
-              <span>Compare the best meditation cushions for posture and comfort</span>
-            </div>
-          </a>
+          </div>
         </div>
-      </section>
+
+        <p class="notice-mini">
+          Each category links to its own page with all comparison guides for that area.
+        </p>
+
+        </section>
     </div>
   </header>
 
   <main class="wrap">
-
     <section class="about">
-
       <h2>How Top 3 Choices Works</h2>
 
       <p class="aboutintro">
@@ -565,7 +532,6 @@
       </p>
 
       <div class="aboutgrid">
-
         <div class="aboutbox">
           <div class="boxtitle">
             <span class="badge overall">Best Overall</span>
@@ -589,9 +555,7 @@
           </div>
           <p>A higher end option for buyers who want additional features, build quality or performance.</p>
         </div>
-
       </div>
-
     </section>
 
     <div class="footer-links">
