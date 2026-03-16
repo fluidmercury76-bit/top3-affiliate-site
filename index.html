@@ -72,6 +72,7 @@
     h2 {
       margin: 0 0 10px 0;
       font-size: 30px;
+      text-align: center;
     }
 
     .trustline {
@@ -114,12 +115,18 @@
       font-size: 18px;
     }
 
-    .categorygrid{
-    display:grid;
-    grid-template-columns:repeat(3,260px);
-    justify-content:center;
-    gap:24px;
-    margin-top:24px;
+    .categorygrid {
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      justify-content: center;
+      gap: 24px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .categorywrap {
+      position: relative;
+      overflow: visible;
     }
 
     .categorycard {
@@ -141,11 +148,6 @@
     .categorycard:hover {
       transform: translateY(-4px) scale(1.01);
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
-
-    .categorywrap {
-      position: relative;
-      overflow: visible;
     }
 
     .categorymenu {
@@ -186,7 +188,8 @@
       background: #f5f5f5;
     }
 
-    .categorycard::before {
+    .categorycard::before,
+    .linkcard::before {
       content: "";
       position: absolute;
       inset: 0;
@@ -212,7 +215,8 @@
       bottom: 15px;
       left: 15px;
       right: 15px;
-      background: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.78);
+      backdrop-filter: blur(4px);
       padding: 10px 14px;
       border-radius: 10px;
       z-index: 3;
@@ -231,28 +235,30 @@
 
     .listlinks {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 26px;
       margin-top: 32px;
     }
 
     .linkcard {
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 20px;
+      border: 1px solid #e2e2e2;
+      border-radius: 22px;
       text-decoration: none;
       color: #111;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
       position: relative;
       min-height: 240px;
       overflow: hidden;
       display: flex;
       align-items: flex-end;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     }
 
     .linkcard:hover {
-      transform: translateY(-6px) scale(1.02);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+      border-color: #d4d4d4;
     }
 
     .kitchen {
@@ -297,16 +303,6 @@
       background-position: center;
     }
 
-    .earbuds::before,
-    .coffee::before,
-    .meditation::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.25);
-      z-index: 1;
-    }
-
     .about {
       max-width: 950px;
       margin: 70px auto;
@@ -326,10 +322,10 @@
     }
 
     .aboutgrid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
-    margin-top:20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 20px;
     }
 
     .aboutbox {
@@ -387,9 +383,28 @@
       margin-right: 16px;
     }
 
+    @media (max-width: 900px) {
+      .categorygrid {
+        grid-template-columns: repeat(2, 260px);
+      }
+
+      .listlinks {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 700px) {
       h1 {
         font-size: 34px;
+      }
+
+      .categorygrid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+
+      .categorywrap {
+        width: 260px;
       }
 
       .categorycard {
@@ -410,16 +425,6 @@
         visibility: visible;
         transform: none;
         margin-top: 8px;
-      }
-    }
-
-      .categorycard,
-      .linkcard {
-        min-height: 210px;
-      }
-
-      .aboutgrid {
-        grid-template-columns: 1fr;
       }
     }
   </style>
