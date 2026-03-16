@@ -25,38 +25,64 @@
     }
 
     .hero {
-      background: white;
-      border-bottom: 1px solid #ddd;
-      padding: 56px 0 40px;
+      padding: 24px 24px 0;
+    }
+
+    .heroimage {
+      position: relative;
+      min-height: 430px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: url("images/kitchen-hero.jpg") center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .herooverlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.42);
+    }
+
+    .herocontent {
+      position: relative;
+      z-index: 2;
+      width: 100%;
       text-align: center;
+      color: white;
+      padding: 40px 24px;
     }
 
     .kicker {
       display: inline-block;
       padding: 6px 12px;
-      border: 1px solid #ccc;
+      border: 1px solid rgba(255, 255, 255, 0.55);
       border-radius: 999px;
       font-size: 14px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.14);
       font-weight: 700;
+      backdrop-filter: blur(2px);
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 46px;
       margin: 16px 0 12px;
+      line-height: 1.15;
     }
 
     .intro {
       max-width: 760px;
       margin: 0 auto;
-      color: #555;
+      color: rgba(255, 255, 255, 0.92);
       font-size: 18px;
     }
 
     .backlink {
       display: inline-block;
       margin-top: 18px;
-      color: #111;
+      color: white;
       text-decoration: none;
       font-weight: 700;
     }
@@ -82,7 +108,7 @@
     .sectionintro {
       max-width: 760px;
       margin: 0 auto 28px;
-      text-align: centre;
+      text-align: center;
       color: #555;
       font-size: 18px;
     }
@@ -98,21 +124,21 @@
       border: 1px solid #ddd;
       border-radius: 22px;
       overflow: hidden;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     }
 
     .guidecard:hover {
       transform: translateY(-6px);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
       border-color: #cfcfcf;
     }
 
     .cardimage {
-      display: block;
       width: 100%;
       height: 220px;
       object-fit: cover;
+      display: block;
       background: #eee;
     }
 
@@ -153,6 +179,7 @@
       text-align: center;
       font-size: 14px;
       color: #555;
+      padding-bottom: 20px;
     }
 
     .footer-links a {
@@ -166,33 +193,47 @@
     }
 
     @media (max-width: 700px) {
+      .hero {
+        padding: 16px 16px 0;
+      }
+
+      .heroimage {
+        min-height: 340px;
+        border-radius: 22px;
+      }
+
       h1 {
         font-size: 34px;
       }
 
-      .hero {
-        padding: 46px 0 34px;
-      }
-
-      .cardimage {
-        height: 200px;
+      .intro {
+        font-size: 16px;
       }
 
       .section {
         padding: 22px;
       }
+
+      .cardimage {
+        height: 200px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header class="hero">
-    <div class="wrap">
-      <p class="kicker">Top 3 Choices</p>
-      <h1>Kitchen</h1>
-      <p class="intro">
-        Browse our kitchen buying guides to quickly compare the best products for cooking, coffee and food preparation.
-      </p>
-      <a class="backlink" href="index.html">← Back to homepage</a>
+    <div class="heroimage">
+      <div class="herooverlay"></div>
+
+      <div class="wrap herocontent">
+        <p class="kicker">Top 3 Choices</p>
+        <h1>Kitchen</h1>
+        <p class="intro">
+          Browse our kitchen buying guides to quickly compare the best products for cooking, coffee and food preparation.
+        </p>
+        <a class="backlink" href="index.html">← Back to homepage</a>
+      </div>
     </div>
   </header>
 
@@ -223,7 +264,7 @@
         </article>
 
         <article class="guidecard">
-          <img class="cardimage" src="images/blender.jpg" alt="Blender with smoothie ingredients on a kitchen surface" />
+          <img class="cardimage" src="images/blender.jpg" alt="Blender with ingredients on a kitchen worktop" />
           <div class="cardcontent">
             <h3>Best Blenders UK</h3>
             <p>Discover the best blenders for smoothies, soups and everyday kitchen use at home.</p>
@@ -239,5 +280,6 @@
       <a href="contact.html">Contact</a>
     </div>
   </main>
+
 </body>
 </html>
