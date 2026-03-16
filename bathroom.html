@@ -1,68 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bathroom | Top 3 Choices</title>
-  <meta name="description" content="Browse our bathroom product guides, including the best electric toothbrushes, shower heads and bathroom scales in the UK." />
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; color: #111; line-height: 1.6; }
-    * { box-sizing: border-box; }
-    .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 28px 60px; }
-    .hero { background: white; border-bottom: 1px solid #ddd; padding: 56px 0 36px; text-align: center; }
-    .kicker { display: inline-block; padding: 8px 18px; border: 1px solid #ccc; border-radius: 999px; background: #fff; font-size: 14px; font-weight: 700; }
-    h1 { font-size: 44px; margin: 16px 0 12px; }
-    .intro { max-width: 760px; margin: 0 auto; color: #555; font-size: 18px; }
-    .backlink { display: inline-block; margin-top: 18px; color: #111; text-decoration: none; font-weight: 700; }
-    .section { background: white; border: 1px solid #ddd; border-radius: 24px; padding: 24px; margin-top: 36px; }
-    .section h2 { margin: 0 0 10px; font-size: 30px; text-align: center; }
-    .sectionintro { max-width: 760px; margin: 0 auto 24px; text-align: center; color: #555; font-size: 18px; }
-    .guides { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
-    .guidecard { background: #fff; border: 1px solid #ddd; border-radius: 22px; padding: 22px; }
-    .guidecard h3 { margin: 0 0 10px; font-size: 22px; }
-    .guidecard p { margin: 0 0 16px; color: #555; }
-    .button { display: inline-block; background: #111; color: white; text-decoration: none; padding: 12px 16px; border-radius: 12px; font-weight: 700; }
-    .footer-links { margin-top: 40px; text-align: center; font-size: 14px; color: #555; }
-    .footer-links a { color: #111; text-decoration: none; margin: 0 10px; }
-    @media (max-width: 700px) { h1 { font-size: 34px; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bathroom | Top 3 Choices</title>
+
+<meta name="description" content="Browse our bathroom product guides, including the best electric toothbrushes, shower heads and bathroom scales in the UK.">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+color:#111;
+line-height:1.6;
+}
+
+*{
+box-sizing:border-box;
+}
+
+.wrap{
+max-width:1150px;
+margin:0 auto;
+padding:24px;
+}
+
+/* HERO */
+
+.hero{
+padding:24px 24px 0;
+}
+
+.heroimage{
+position:relative;
+min-height:440px;
+border-radius:28px;
+overflow:hidden;
+background:url("images/bathroom-hero.jpg") center center / cover no-repeat;
+display:flex;
+align-items:center;
+border:1px solid #ddd;
+box-shadow:0 12px 32px rgba(0,0,0,0.08);
+}
+
+.herooverlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.25);
+}
+
+/* TEXT CARD */
+
+.herocard{
+position:relative;
+z-index:2;
+max-width:720px;
+margin:0 auto;
+text-align:center;
+padding:34px 40px;
+border-radius:22px;
+
+background:linear-gradient(
+135deg,
+rgba(255,255,255,0.88),
+rgba(255,232,170,0.75)
+);
+
+backdrop-filter:blur(6px);
+
+box-shadow:0 10px 28px rgba(0,0,0,0.15);
+}
+
+.kicker{
+display:inline-block;
+padding:6px 12px;
+border:1px solid rgba(0,0,0,0.15);
+border-radius:999px;
+font-size:14px;
+background:rgba(255,255,255,0.9);
+font-weight:700;
+}
+
+h1{
+font-size:46px;
+margin:16px 0 12px;
+line-height:1.15;
+}
+
+.intro{
+color:#333;
+font-size:18px;
+}
+
+.backlink{
+display:inline-block;
+margin-top:18px;
+color:#111;
+text-decoration:none;
+font-weight:700;
+}
+
+.backlink:hover{
+text-decoration:underline;
+}
+
+/* CONTENT */
+
+.section{
+background:white;
+border:1px solid #ddd;
+border-radius:24px;
+padding:28px;
+margin-top:36px;
+}
+
+.section h2{
+margin:0 0 10px;
+font-size:30px;
+text-align:center;
+}
+
+.sectionintro{
+max-width:760px;
+margin:0 auto 28px;
+text-align:center;
+color:#555;
+font-size:18px;
+}
+
+/* GUIDE GRID */
+
+.guides{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
+
+.guidecard{
+background:#fff;
+border:1px solid #ddd;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 4px 14px rgba(0,0,0,0.05);
+transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+
+.guidecard:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 36px rgba(0,0,0,0.14);
+border-color:#cfcfcf;
+}
+
+.cardimage{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+background:#eee;
+}
+
+.cardcontent{
+padding:22px;
+}
+
+.guidecard h3{
+margin:0 0 10px;
+font-size:24px;
+}
+
+.guidecard p{
+margin:0 0 18px;
+color:#555;
+font-size:16px;
+}
+
+/* BUTTON */
+
+.button{
+display:inline-block;
+background:#111;
+color:white;
+text-decoration:none;
+padding:12px 16px;
+border-radius:12px;
+font-weight:700;
+transition:background .2s ease,transform .2s ease;
+}
+
+.button:hover{
+background:#222;
+transform:translateY(-1px);
+}
+
+/* FOOTER */
+
+.footer-links{
+margin-top:40px;
+text-align:center;
+font-size:14px;
+color:#555;
+padding-bottom:20px;
+}
+
+.footer-links a{
+color:#111;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero{
+padding:16px 16px 0;
+}
+
+.heroimage{
+min-height:340px;
+border-radius:22px;
+}
+
+.herocard{
+padding:26px 24px;
+}
+
+h1{
+font-size:34px;
+}
+
+.intro{
+font-size:16px;
+}
+
+.section{
+padding:22px;
+}
+
+.cardimage{
+height:200px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <p class="kicker">Top 3 Choices</p>
-      <h1>Bathroom</h1>
-      <p class="intro">Browse our bathroom buying guides to compare practical products for daily care, comfort and everyday use.</p>
-      <a class="backlink" href="index.html">← Back to homepage</a>
-    </div>
-  </header>
-  <main class="wrap">
-    <section class="section">
-      <h2>Bathroom guides</h2>
-      <p class="sectionintro">Each guide highlights the best overall, best value and premium pick to help you choose with confidence.</p>
-      <div class="guides">
-        <article class="guidecard">
-          <h3>Best Electric Toothbrushes UK</h3>
-          <p>Compare the best electric toothbrushes for cleaning performance and ease of use.</p>
-          <a class="button" href="best-electric-toothbrushes.html">View guide</a>
-        </article>
-        <article class="guidecard">
-          <h3>Best Shower Heads UK</h3>
-          <p>Find the best shower heads for pressure, comfort and everyday performance.</p>
-          <a class="button" href="best-shower-heads.html">View guide</a>
-        </article>
-        <article class="guidecard">
-          <h3>Best Bathroom Scales UK</h3>
-          <p>Discover bathroom scales that are accurate, clear and easy to use.</p>
-          <a class="button" href="best-bathroom-scales.html">View guide</a>
-        </article>
-      </div>
-    </section>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </main>
+
+<header class="hero">
+
+<div class="heroimage">
+
+<div class="herooverlay"></div>
+
+<div class="wrap">
+
+<div class="herocard">
+
+<p class="kicker">Top 3 Choices</p>
+
+<h1>Bathroom</h1>
+
+<p class="intro">
+Browse our bathroom buying guides to compare practical products for daily care comfort and everyday use.
+</p>
+
+<a class="backlink" href="index.html">← Back to homepage</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<main class="wrap">
+
+<section class="section">
+
+<h2>Bathroom guides</h2>
+
+<p class="sectionintro">
+Each guide highlights the best overall best value and premium pick to help you choose with confidence.
+</p>
+
+<div class="guides">
+
+<article class="guidecard">
+
+<img class="cardimage" src="images/electric-toothbrush.jpg" alt="Electric toothbrush on bathroom counter">
+
+<div class="cardcontent">
+
+<h3>Best Electric Toothbrushes UK</h3>
+
+<p>Compare the best electric toothbrushes for cleaning performance and ease of use.</p>
+
+<a class="button" href="best-electric-toothbrushes.html">View guide</a>
+
+</div>
+
+</article>
+
+<article class="guidecard">
+
+<img class="cardimage" src="images/shower-head.jpg" alt="Modern shower head">
+
+<div class="cardcontent">
+
+<h3>Best Shower Heads UK</h3>
+
+<p>Find the best shower heads for pressure comfort and everyday performance.</p>
+
+<a class="button" href="best-shower-heads.html">View guide</a>
+
+</div>
+
+</article>
+
+<article class="guidecard">
+
+<img class="cardimage" src="images/bathroom-scales.jpg" alt="Bathroom scales on floor">
+
+<div class="cardcontent">
+
+<h3>Best Bathroom Scales UK</h3>
+
+<p>Discover bathroom scales that are accurate clear and easy to use.</p>
+
+<a class="button" href="best-bathroom-scales.html">View guide</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<div class="footer-links">
+
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</main>
+
 </body>
 </html>
