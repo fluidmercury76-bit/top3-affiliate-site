@@ -1,40 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://top3choices.co.uk/</loc>
-</url>
+  <!-- Core pages -->
+  <url>
+    <loc>https://www.top3choices.co.uk/</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/affiliate-disclosure.html</loc>
+  </url>
 
-<url>
-<loc>https://top3choices.co.uk/best-air-fryers.html</loc>
-</url>
+  <!-- Category pages -->
+  <url>
+    <loc>https://www.top3choices.co.uk/categories/bathroom.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/categories/home-comfort.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/categories/kitchen.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/categories/outdoor-living.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/categories/stillness-and-clarity.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/categories/technology.html</loc>
+  </url>
 
-<url>
-<loc>https://top3choices.co.uk/best-wireless-earbuds.html</loc>
-</url>
-
-<url>
-<loc>https://top3choices.co.uk/best-power-banks.html</loc>
-</url>
-
-<url>
-<loc>https://top3choices.co.uk/best-electric-toothbrushes.html</loc>
-</url>
-
-<url>
-<loc>https://top3choices.co.uk/best-bluetooth-speakers.html</loc>
-</url>
-
-<url>
-<loc>https://top3choices.co.uk/best-desk-lamps.html</loc>
-</url>
-
-<url>
-<loc>https://top3choices.co.uk/best-coffee-machines.html</loc>
-</url>
-
-<url>
-<loc>https://top3choices.co.uk/best-meditation-cushions.html</loc>
-</url>
+  <!-- Product pages -->
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-air-fryers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-bathroom-scales.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-blenders.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-bluetooth-speakers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-coffee-machines.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-dehumidifiers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-desk-lamps.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-electric-toothbrushes.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-meditation-cushions.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-power-banks.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-shower-heads.html</loc>
+  </url>
+  <url>
+    <loc>https://www.top3choices.co.uk/products/best-wireless-earbuds.html</loc>
+  </url>
 
 </urlset>
