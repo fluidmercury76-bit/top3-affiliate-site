@@ -178,13 +178,12 @@ font-size:16px;
 }
 
 .viewguide{
-display:inline-block;
-margin-top:16px;
-font-size:14px;
-font-weight:700;
-color:#ff9900;
-transition:transform .2s ease,color .2s ease;
-align-self:flex-start;
+  display:inline-block;
+  margin-top:auto;
+  font-size:14px;
+  font-weight:700;
+  color:#ff9900;
+  transition:transform .2s ease,color .2s ease;
 }
 
 .guidecard:hover .viewguide{
