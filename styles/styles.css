@@ -126,12 +126,17 @@ gap:24px;
 }
 
 .guidecard{
+display:block;
 background:#fff;
 border:1px solid #ddd;
 border-radius:22px;
 overflow:hidden;
 box-shadow:0 4px 14px rgba(0,0,0,0.05);
 transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+text-decoration:none;
+color:#111;
+cursor:pointer;
+height:100%;
 }
 
 .guidecard:hover{
@@ -146,10 +151,18 @@ height:220px;
 object-fit:cover;
 display:block;
 background:#eee;
+transition:transform .3s ease;
+}
+
+.guidecard:hover .cardimage{
+transform:scale(1.03);
 }
 
 .cardcontent{
 padding:22px;
+display:flex;
+flex-direction:column;
+height:100%;
 }
 
 .guidecard h3{
@@ -159,25 +172,24 @@ line-height:1.3;
 }
 
 .guidecard p{
-margin:0 0 18px;
+margin:0;
 color:#555;
 font-size:16px;
 }
 
-.button{
+.viewguide{
 display:inline-block;
-background:#111;
-color:white;
-text-decoration:none;
-padding:12px 16px;
-border-radius:12px;
+margin-top:16px;
+font-size:14px;
 font-weight:700;
-transition:background .2s ease,transform .2s ease;
+color:#ff9900;
+transition:transform .2s ease,color .2s ease;
+align-self:flex-start;
 }
 
-.button:hover{
-background:#222;
-transform:translateY(-1px);
+.guidecard:hover .viewguide{
+transform:translateX(4px);
+color:#e88900;
 }
 
 /* FOOTER */
@@ -231,6 +243,10 @@ padding:22px;
 
 .cardimage{
 height:200px;
+}
+
+.guidecard h3{
+font-size:22px;
 }
 
 }
