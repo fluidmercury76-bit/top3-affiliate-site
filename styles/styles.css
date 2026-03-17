@@ -159,10 +159,10 @@ transform:scale(1.03);
 }
 
 .cardcontent{
-padding:22px;
-display:flex;
-flex-direction:column;
-height:100%;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  height:100%;
 }
 
 .guidecard h3{
