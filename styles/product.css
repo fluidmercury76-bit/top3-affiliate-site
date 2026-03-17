@@ -82,6 +82,39 @@ h3 {
   margin-bottom: 0;
 }
 
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e3e5e8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #111;
+}
+
+.topbar nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+}
+
+.topbar nav a:hover {
+  color: #000;
+}
+
 .compare-table {
   width: 100%;
   border-collapse: collapse;
