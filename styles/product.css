@@ -112,14 +112,26 @@ h3 {
   gap: 8px;
 }
 
-.nav > a,
+.nav a,
 .dropbtn {
-  border: 0;
-  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  font-weight: 600;
   font-family: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.nav > a:hover,
+.nav a:hover,
 .dropbtn:hover {
   background: #f3f5f7;
   color: #111;
