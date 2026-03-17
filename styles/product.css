@@ -114,17 +114,9 @@ h3 {
 
 .nav > a,
 .dropbtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  padding: 0 14px;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #444;
-  font-size: 15px;
-  font-weight: 600;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
 }
 
 .nav > a:hover,
