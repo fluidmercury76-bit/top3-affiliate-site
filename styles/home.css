@@ -35,7 +35,7 @@ body {
   height: 1100px;
   background: url("../images/Dhamma_wheel.png") no-repeat center;
   background-size: contain;
-  opacity: 0.08;
+  opacity: 0.09;
   z-index: 0;
   pointer-events: none;
 }
