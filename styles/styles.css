@@ -123,10 +123,13 @@ font-size:18px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:24px;
+align-items:stretch;
 }
 
 .guidecard{
-display:block;
+display:flex;
+flex-direction:column;
+height:100%;
 background:#fff;
 border:1px solid #ddd;
 border-radius:22px;
@@ -136,7 +139,6 @@ transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
 text-decoration:none;
 color:#111;
 cursor:pointer;
-height:100%;
 }
 
 .guidecard:hover{
@@ -152,6 +154,7 @@ object-fit:cover;
 display:block;
 background:#eee;
 transition:transform .3s ease;
+flex-shrink:0;
 }
 
 .guidecard:hover .cardimage{
@@ -162,7 +165,7 @@ transform:scale(1.03);
 padding:22px;
 display:flex;
 flex-direction:column;
-min-height:210px;
+flex:1;
 }
 
 .guidecard h3{
@@ -247,7 +250,7 @@ height:200px;
 }
 
 .cardcontent{
-min-height:auto;
+flex:1;
 }
 
 }
