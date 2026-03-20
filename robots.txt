@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://top3choices.co.uk/sitemap.xml
+Disallow: /styles/
+Disallow: /scripts/
+
+Sitemap: https://www.top3choices.co.uk/sitemap.xml
