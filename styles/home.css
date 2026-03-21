@@ -172,77 +172,87 @@ body {
 /* HERO */
 
 .hero {
-  background: white;
-  border-bottom: 1px solid #ddd;
-  position: relative;
-  overflow: hidden;
-  padding-top: 60px;
+  padding: 32px 28px 0;
+  background: transparent;
+  border-bottom: none;
   text-align: center;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1100px;
-  height: 1100px;
-  background: url("../images/Dhamma_wheel.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.3;
-  z-index: 0;
-  pointer-events: none;
 }
 
 .hero .wrap {
   position: relative;
+}
+
+.herocard {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ffffff, #f8f8f8);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+  padding: 56px 36px;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.herocard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/Dhamma_wheel.png") no-repeat center;
+  background-size: 760px auto;
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.herocard-content {
+  position: relative;
   z-index: 2;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .kicker {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 18px;
   border: 1px solid #ccc;
   border-radius: 999px;
   font-size: 14px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.92);
   font-weight: 700;
 }
 
 h1 {
-  font-size: 42px;
-  margin: 16px 0;
-}
-
-h2 {
-  margin: 0 0 10px 0;
-  font-size: 30px;
-  text-align: center;
+  font-size: 64px;
+  line-height: 1.08;
+  margin: 22px 0 20px;
 }
 
 .trustline {
   font-size: 15px;
-  color: #666;
-  margin-top: 8px;
+  color: #555;
+  margin-top: 6px;
 }
 
 .notice {
-  background: #fafafa;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 14px;
+  border-radius: 18px;
+  padding: 18px 20px;
   color: #555;
-  margin-top: 20px;
+  margin: 24px auto 0;
+  max-width: 1000px;
 }
 
 .introtext {
-  max-width: 700px;
+  max-width: 820px;
   color: #555;
-  margin: 20px auto 30px auto;
+  margin: 26px auto 0;
   text-align: center;
   font-size: 18px;
-  padding: 0 24px;
+  padding: 0;
 }
 
 .section {
