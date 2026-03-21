@@ -245,6 +245,8 @@ h1 {
   margin: 24px auto 0;
   max-width: 1000px;
   backdrop-filter: blur(6px);
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .introtext {
