@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
-  <url>
-    <loc>https://www.top3choices.co.uk/</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>1.0</priority>
-  </url>
+<!-- Homepage -->
+<url>
+<loc>https://www.top3choices.co.uk/</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>1.0</priority>
+</url>
 
-  <!-- Core pages -->
-  <url>
-    <loc>https://www.top3choices.co.uk/contact.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/privacy.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/affiliate-disclosure.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.3</priority>
-  </url>
+<!-- Core pages -->
+<url>
+<loc>https://www.top3choices.co.uk/affiliate-disclosure.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/contact.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.4</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/privacy.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.3</priority>
+</url>
 
-  <!-- Category pages -->
-  <url>
-    <loc>https://www.top3choices.co.uk/categories/bathroom.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/categories/home-comfort.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/categories/kitchen.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/categories/outdoor-living.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/categories/stillness-and-clarity.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/categories/technology.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.8</priority>
-  </url>
+<!-- Category pages -->
+<url>
+<loc>https://www.top3choices.co.uk/categories/bathroom.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/categories/home-comfort.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/categories/kitchen.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/categories/outdoor-living.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/categories/stillness-and-clarity.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/categories/technology.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.8</priority>
+</url>
 
-  <!-- Product pages -->
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-air-fryers.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-bathroom-scales.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-blenders.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-bluetooth-speakers.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-coffee-machines.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-dehumidifiers.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-desk-lamps.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-electric-toothbrushes.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-meditation-cushions.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-power-banks.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-shower-heads.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-wireless-earbuds.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-desk-fans.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-heaters.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-yoga-mats.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-patio-heaters.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-outdoor-lights.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-garden-tools.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-meditation-blankets.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.top3choices.co.uk/products/best-singing-bowls.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <priority>0.7</priority>
-  </url>
+<!-- Product pages -->
+<url>
+<loc>https://www.top3choices.co.uk/products/best-air-fryers.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-bathroom-scales.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-blenders.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-bluetooth-speakers.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-coffee-machines.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-dehumidifiers.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-fans.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-desk-lamps.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-electric-toothbrushes.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-garden-tools.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-heaters.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-meditation-blankets.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-meditation-cushions.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-outdoor-lights.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-patio-heaters.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-power-banks.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-shower-heads.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-singing-bowls.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-wireless-earbuds.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://www.top3choices.co.uk/products/best-yoga-mats.html</loc>
+<lastmod>2026-03-20</lastmod>
+<priority>0.7</priority>
+</url>
 
 </urlset>
