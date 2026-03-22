@@ -169,46 +169,68 @@ body {
   text-decoration: underline;
 }
 
-/* FAQ */
+/* =========================
+   FAQ SECTION
+   ========================= */
 
-.faq-section {
+/* Outer FAQ container card */
+.faq-card {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  padding: 28px;
   margin-top: 48px;
 }
 
-.faq-section h2 {
+/* FAQ heading */
+.faq-card h2 {
+  margin-top: 0;
   margin-bottom: 24px;
+  font-size: 28px;
+  line-height: 1.2;
 }
 
+/* Grid layout */
 .faq-grid {
   display: grid;
-  gap: 18px;
+  gap: 16px;
 }
 
+/* Two columns on larger screens */
+@media (min-width: 700px) {
+  .faq-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Individual FAQ item cards */
 .faq-item {
   background: #fff;
-  border: 1px solid #e2e2e2;
-  border-radius: 18px;
-  padding: 22px 24px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e4e4e4;
+  border-radius: 16px;
+  padding: 20px 22px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+/* Hover effect */
 .faq-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
-  border-color: #d6d6d6;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-color: #dcdcdc;
 }
 
+/* Question styling */
 .faq-item h3 {
   margin: 0 0 10px;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.35;
 }
 
+/* Answer styling */
 .faq-item p {
   margin: 0;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 15.5px;
+  line-height: 1.65;
   color: #333;
 }
 
