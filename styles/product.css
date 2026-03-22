@@ -169,6 +169,40 @@ body {
   text-decoration: underline;
 }
 
+/* FAQ */
+
+.faq-section {
+  margin-top: 48px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+}
+
+.faq-section h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.faq-item + .faq-item {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.faq-item h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #333;
+}
+
 /* HERO */
 
 .hero {
