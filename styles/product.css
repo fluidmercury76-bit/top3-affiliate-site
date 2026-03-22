@@ -192,9 +192,10 @@ body {
 
 /* Grid layout */
 .faq-grid {
-  display: grid;
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 /* Two columns on larger screens */
