@@ -193,18 +193,22 @@ body {
 /* Grid layout */
 .faq-grid {
   display: grid;
-  gap: 16px;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* Two columns on larger screens */
 @media (min-width: 700px) {
   .faq-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
   }
 }
 
 /* Individual FAQ item cards */
 .faq-item {
+  width: 100%;
+  max-width: 320px;
   background: #fff;
   border: 1px solid #e4e4e4;
   border-radius: 16px;
