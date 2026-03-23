@@ -4,6 +4,11 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/best-:slug.html",
+      "destination": "/products/best-:slug.html",
+      "permanent": true
     }
   ]
 }
