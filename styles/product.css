@@ -651,3 +651,77 @@ h4 {
     width: min(94vw, 360px);
   }
 }
+
+
+/* LARGE SCREEN CARD ALIGNMENT */
+
+@media (min-width: 1100px) {
+  .top-picks {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto 260px minmax(60px, auto) minmax(165px, auto) minmax(58px, auto) 1fr auto;
+    gap: 0;
+    align-content: start;
+  }
+
+  .card h3 {
+    min-height: 58px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .summary {
+    min-height: 160px;
+    margin-bottom: 16px;
+  }
+
+  .spec-strip {
+    min-height: 58px;
+    align-content: flex-start;
+    margin-bottom: 18px;
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(0, auto));
+    gap: 14px;
+    align-self: stretch;
+  }
+
+  .detail-grid > .box:nth-child(1) {
+    min-height: 120px;
+  }
+
+  .detail-grid > .box:nth-child(2) {
+    min-height: 148px;
+  }
+
+  .detail-grid > .box:nth-child(3) {
+    min-height: 120px;
+  }
+
+  .detail-grid > .box:nth-child(4) {
+    min-height: 110px;
+  }
+
+  .detail-grid > .box:nth-child(5) {
+    min-height: 128px;
+  }
+
+  .detail-grid > .box:nth-child(6) {
+    min-height: 110px;
+  }
+
+  .card .button {
+    margin-top: 18px;
+    width: 100%;
+    text-align: center;
+    align-self: end;
+  }
+}
