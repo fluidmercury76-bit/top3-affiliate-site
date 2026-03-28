@@ -16,6 +16,18 @@ body {
   padding: 32px 28px;
 }
 
+/* Corner Image */
+
+.corner-badge {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 180px;
+  z-index: 9999;
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+
 
 /* HERO */
 
