@@ -60,13 +60,13 @@ body {
   z-index: 2;
   max-width: 980px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 180px;
   text-align: center;
 }
 
 .hero-badge {
   position: absolute;
-  top: 10px;
+  top: 58px;
   left: 50%;
   transform: translateX(-50%);
   width: 450px;
