@@ -66,7 +66,7 @@ body {
 
 .hero-badge {
   position: absolute;
-  top: -20px;   /* move it up */
+  top: -70px;   /* move it up */
   left: 50%;
   transform: translateX(-50%);
   width: 450px;
