@@ -66,12 +66,12 @@ body {
 
 .hero-badge {
   position: absolute;
-  top: 58px;
+  top: 20px;   /* move it up */
   left: 50%;
   transform: translateX(-50%);
   width: 450px;
   height: auto;
-  z-index: 3;
+  z-index: 2;  /* lower than pill */
   opacity: 0.95;
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.12));
   pointer-events: none;
@@ -79,11 +79,12 @@ body {
 
 .kicker {
   display: inline-block;
+  position: relative;
+  z-index: 4;
   padding: 10px 18px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 999px;
   font-size: 14px;
-    z-index: 4;
   font-weight: 700;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
