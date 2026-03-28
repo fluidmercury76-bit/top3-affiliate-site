@@ -489,8 +489,8 @@ h1 {
   }
 
   .hero-badge {
-    top: 22px;
-    width: 140px;
+    top: 0px;
+    width: 190px;
   }
 
   .categorygrid {
