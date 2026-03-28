@@ -484,4 +484,13 @@ h1 {
   .mega-menu {
     width: min(94vw, 360px);
   }
+
+
+  .hero-badge {
+  display: block;
+  margin: 0 auto 18px;
+  width: 240px;
+  max-width: 80%;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.2));
+}
 }
