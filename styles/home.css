@@ -487,10 +487,11 @@ h1 {
 
 
 .hero-badge {
-  display: block;
-  margin: 0 auto 12px;
-  width: 160px;          /* smaller */
-  max-width: 60%;
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
-}
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  z-index: 3;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.18));
 }
