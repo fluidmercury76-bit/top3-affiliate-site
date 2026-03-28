@@ -491,8 +491,8 @@ h1 {
   top: 18px;
   left: 50%;
   transform: translateX(-50%);
-  width: 110px;
+  width: 75px;
   z-index: 3;
-  opacity: 0.95;
+  opacity: 0.9;
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.12));
 }
