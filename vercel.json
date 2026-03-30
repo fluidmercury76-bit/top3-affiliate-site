@@ -6,8 +6,23 @@
       "permanent": true
     },
     {
-      "source": "/best-:slug.html",
-      "destination": "/products/best-:slug.html",
+      "source": "/best-meditation-cushions.html",
+      "destination": "/products/best-meditation-cushions.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-coffee-machines.html",
+      "destination": "/products/best-coffee-machines.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-desk-lamps.html",
+      "destination": "/products/best-desk-lamps.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-bluetooth-speakers.html",
+      "destination": "/products/best-bluetooth-speakers.html",
       "permanent": true
     }
   ]
