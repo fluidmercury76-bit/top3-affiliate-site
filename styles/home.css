@@ -536,8 +536,8 @@ h1 {
   .mega-menu {
     width: min(94vw, 360px);
   }
-
-  /* STICKY, THINNER TOP MENU */
+}
+/* STICKY, THINNER TOP MENU */
 
 .topbar {
   position: sticky;
@@ -565,7 +565,7 @@ h1 {
   padding: 0 12px;
   font-size: 14px;
   display: inline-flex;
-  align-items: centre;
+  align-items: center;
 }
 
 .mega-menu {
@@ -581,10 +581,6 @@ h1 {
 .hero .wrap {
   padding-top: 12px;
   padding-bottom: 10px;
-}
-
-.herocard {
-  margin-top: 0;
 }
 
 main.wrap {
@@ -664,5 +660,4 @@ main.wrap {
     padding: 0 10px;
     font-size: 13px;
   }
-}
 }
