@@ -1,23 +1,15 @@
 /* SHARED HEADER */
 
 body {
-  padding-top: 48px;
-}
-
-.topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5000;
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid #ddd;
-  backdrop-filter: blur(12px);
+  padding-top: 64px;
 }
 
 .topbar-inner {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .logo {
@@ -25,12 +17,14 @@ body {
   font-size: 16px;
   text-decoration: none;
   color: #111;
+  flex: 0 0 auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex: 0 0 auto;
 }
 
 .nav > a,
@@ -38,7 +32,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 28px;
+  height: 32px;
   padding: 0 10px;
   border-radius: 10px;
   text-decoration: none;
