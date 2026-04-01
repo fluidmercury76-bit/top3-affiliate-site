@@ -13,13 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   color: #111;
 }
@@ -35,12 +35,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 42px;
-  padding: 0 14px;
-  border-radius: 12px;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 10px;
   text-decoration: none;
   color: #444;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   font-family: inherit;
   background: transparent;
@@ -173,8 +173,8 @@
 
 @media (max-width: 900px) {
   .topbar-inner {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .nav {
@@ -194,13 +194,13 @@
 @media (max-width: 700px) {
   .nav > a,
   .mega-dropbtn {
-    height: 40px;
-    padding: 0 12px;
+    height: 34px;
+    padding: 0 10px;
     font-size: 14px;
   }
 
   .logo {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .mega-menu {
