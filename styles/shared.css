@@ -168,7 +168,7 @@ body {
 
 /* give all hero sections a small gap below the fixed header */
 .hero {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* SHARED FOOTER */
@@ -194,11 +194,10 @@ body {
 /* SHARED MOBILE */
 
 @media (max-width: 900px) {
-  .topbar .wrap,
-  .topbar-inner {
-    padding-left: 20px;
-    padding-right: 20px;
+  .topbar .wrap {
+    padding: 0 20px !important;
   }
+}
 
   .topbar-inner {
     padding-top: 7px;
@@ -226,11 +225,10 @@ body {
 }
 
 @media (max-width: 700px) {
-  .topbar .wrap,
-  .topbar-inner {
-    padding-left: 16px;
-    padding-right: 16px;
+  .topbar .wrap {
+    padding: 0 16px !important;
   }
+}
 
   .nav > a,
   .mega-dropbtn {
