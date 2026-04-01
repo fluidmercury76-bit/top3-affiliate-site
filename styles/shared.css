@@ -1,20 +1,21 @@
 /* SHARED HEADER */
 
+body {
+  padding-top: 52px;
+}
+
 .topbar {
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 5000;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #ddd;
   backdrop-filter: blur(12px);
 }
 
 .topbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 4px;
   padding-bottom: 4px;
 }
