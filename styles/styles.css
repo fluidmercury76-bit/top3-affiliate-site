@@ -1,5 +1,5 @@
 body{
-margin:0; 
+margin:0;
 font-family:Arial,sans-serif;
 background:#f5f5f5;
 color:#111;
@@ -198,30 +198,7 @@ color:#e88900;
 }
 
 
-
 /* MOBILE */
-
-@media(max-width:900px){
-
-.topbar-inner{
-padding-top:12px;
-padding-bottom:12px;
-}
-
-.nav{
-flex-wrap:wrap;
-}
-
-.mega-menu{
-width:min(92vw,420px);
-grid-template-columns:1fr;
-right:0;
-left:auto;
-max-height:70vh;
-overflow-y:auto;
-}
-
-}
 
 @media(max-width:700px){
 
@@ -260,21 +237,6 @@ flex:1;
 
 .wrap{
 padding:22px 16px;
-}
-
-.nav > a,
-.mega-dropbtn{
-height:40px;
-padding:0 12px;
-font-size:14px;
-}
-
-.logo{
-font-size:17px;
-}
-
-.mega-menu{
-width:min(94vw,360px);
 }
 
 }
