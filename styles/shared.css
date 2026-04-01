@@ -22,7 +22,7 @@ body {
 
 .logo {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: none;
   color: #111;
 }
@@ -38,8 +38,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 20px;
-  padding: 0 9px;
+  height: 28px;
+  padding: 0 10px;
   border-radius: 10px;
   text-decoration: none;
   color: #444;
