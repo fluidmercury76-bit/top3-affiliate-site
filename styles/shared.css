@@ -104,10 +104,10 @@ body {
 .mega-menu {
   position: absolute;
   top: calc(100% + 6px);
-  left: 50%;
-  right: auto;
+  right: 0;
+  left: auto;
   width: 980px;
-  max-width: calc(100vw - 40px);
+  max-width: min(980px, calc(100vw - 32px));
   background: rgba(255, 255, 255, 0.98);
   border: 1px solid #e5e7eb;
   border-radius: 18px;
@@ -121,7 +121,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-50%) translateY(8px);
+  transform: translateY(8px);
   transition: opacity 0.2s ease, transform 0.22s ease, visibility 0.22s ease;
 }
 
@@ -130,7 +130,7 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 
 .mega-column {
