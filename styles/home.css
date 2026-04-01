@@ -537,3 +537,25 @@ h1 {
     width: min(94vw, 360px);
   }
 }
+.hero {
+  padding: 12px 28px 0;
+}
+
+.hero .wrap {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.section:first-child {
+  margin-top: 10px;
+}
+
+.categorygrid {
+  grid-template-columns: repeat(3, 290px);
+  gap: 20px;
+}
+
+.categorycard {
+  min-height: 180px;
+  border-radius: 22px;
+}
