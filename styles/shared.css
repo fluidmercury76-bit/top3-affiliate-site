@@ -16,13 +16,10 @@ body {
 }
 
 /* force the same header width on every page */
-.topbar .wrap,
-.topbar-inner {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 28px;
-  padding-right: 28px;
+.topbar .wrap {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 28px !important;
 }
 
 .topbar-inner {
