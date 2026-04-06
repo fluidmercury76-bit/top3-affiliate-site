@@ -6,8 +6,23 @@
       "permanent": true
     },
     {
-      "source": "/best-meditation-cushions.html",
-      "destination": "/products/best-meditation-cushions.html",
+      "source": "/best-air-fryers.html",
+      "destination": "/products/best-air-fryers.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-bathroom-scales.html",
+      "destination": "/products/best-bathroom-scales.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-blenders.html",
+      "destination": "/products/best-blenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-bluetooth-speakers.html",
+      "destination": "/products/best-bluetooth-speakers.html",
       "permanent": true
     },
     {
@@ -16,13 +31,78 @@
       "permanent": true
     },
     {
+      "source": "/best-dehumidifiers.html",
+      "destination": "/products/best-dehumidifiers.html",
+      "permanent": true
+    },
+    {
       "source": "/best-desk-lamps.html",
       "destination": "/products/best-desk-lamps.html",
       "permanent": true
     },
     {
-      "source": "/best-bluetooth-speakers.html",
-      "destination": "/products/best-bluetooth-speakers.html",
+      "source": "/best-electric-toothbrushes.html",
+      "destination": "/products/best-electric-toothbrushes.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-fans.html",
+      "destination": "/products/best-fans.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-garden-tools.html",
+      "destination": "/products/best-garden-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-heaters.html",
+      "destination": "/products/best-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-meditation-blankets.html",
+      "destination": "/products/best-meditation-blankets.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-meditation-cushions.html",
+      "destination": "/products/best-meditation-cushions.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-outdoor-lights.html",
+      "destination": "/products/best-outdoor-lights.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-patio-heaters.html",
+      "destination": "/products/best-patio-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-power-banks.html",
+      "destination": "/products/best-power-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-shower-heads.html",
+      "destination": "/products/best-shower-heads.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-singing-bowls.html",
+      "destination": "/products/best-singing-bowls.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-wireless-earbuds.html",
+      "destination": "/products/best-wireless-earbuds.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-yoga-mats.html",
+      "destination": "/products/best-yoga-mats.html",
       "permanent": true
     }
   ]
