@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /styles/
-Disallow: /scripts/
-Disallow: /includes/
-Disallow: /js/
-
 Sitemap: https://www.top3choices.co.uk/sitemap.xml
