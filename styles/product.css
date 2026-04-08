@@ -204,6 +204,18 @@ h4 {
   border-color: #cfd5dc;
 }
 
+.image-link {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.image-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .badge {
   display: inline-block;
   padding: 9px 15px;
