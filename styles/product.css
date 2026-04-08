@@ -255,14 +255,26 @@ h4 {
 }
 
 .card .badge,
-.card .image-box,
 .card h3,
 .card .summary,
 .card .spec-strip,
-.card .detail-grid,
-.card .button {
+.card .detail-grid {
   position: relative;
   z-index: 2;
+  pointer-events: none;
+}
+
+.card .image-box,
+.card .image-box img {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card .button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
 }
 
 /* ===== SECTION END: WHOLE CARD CLICKABLE ===== */
