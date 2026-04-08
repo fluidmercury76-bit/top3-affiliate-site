@@ -1,3 +1,5 @@
+/* ===== SECTION START: BASE ===== */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -16,6 +18,10 @@ body {
   padding: 28px 24px;
 }
 
+/* ===== SECTION END: BASE ===== */
+
+
+/* ===== SECTION START: HERO ===== */
 
 .hero {
   background: linear-gradient(to bottom, #ffffff, #f8f9fb);
@@ -75,6 +81,11 @@ h4 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
+/* ===== SECTION END: HERO ===== */
+
+
+/* ===== SECTION START: GENERIC SECTIONS ===== */
+
 .section {
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid #e3e5e8;
@@ -98,6 +109,11 @@ h4 {
   margin: 0;
 }
 
+/* ===== SECTION END: GENERIC SECTIONS ===== */
+
+
+/* ===== SECTION START: BREADCRUMBS ===== */
+
 .breadcrumbs-bar {
   display: flex;
   align-items: center;
@@ -115,6 +131,11 @@ h4 {
   text-decoration: underline;
 }
 
+/* ===== SECTION END: BREADCRUMBS ===== */
+
+
+/* ===== SECTION START: CRITERIA GRID ===== */
+
 .criteria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -123,7 +144,7 @@ h4 {
 }
 
 .mini-card {
-  background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(248,249,251,0.9));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(248, 249, 251, 0.9));
   border: 1px solid #e5e7eb;
   border-radius: 20px;
   padding: 18px;
@@ -141,6 +162,11 @@ h4 {
   font-size: 15px;
 }
 
+/* ===== SECTION END: CRITERIA GRID ===== */
+
+
+/* ===== SECTION START: COMPARISON TABLE ===== */
+
 .table-wrap {
   overflow-x: auto;
   margin-top: 18px;
@@ -153,7 +179,7 @@ h4 {
   border: 1px solid #e2e5e9;
   border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.45));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.45));
 }
 
 .compare-table th,
@@ -168,6 +194,11 @@ h4 {
   background: #f7f8fa;
   font-weight: 700;
 }
+
+/* ===== SECTION END: COMPARISON TABLE ===== */
+
+
+/* ===== SECTION START: TOP PICKS LAYOUT ===== */
 
 .section-heading-row {
   display: flex;
@@ -185,8 +216,14 @@ h4 {
   align-items: stretch;
 }
 
+/* ===== SECTION END: TOP PICKS LAYOUT ===== */
+
+
+/* ===== SECTION START: CARD BASE ===== */
+
 .card {
-  background: linear-gradient(135deg, rgba(255,255,255,0.68), rgba(255,255,255,0.42));
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.42));
   border: 1px solid rgba(225, 228, 232, 0.7);
   border-radius: 26px;
   padding: 24px;
@@ -204,17 +241,34 @@ h4 {
   border-color: #cfd5dc;
 }
 
-.image-link {
-  display: block;
+/* ===== SECTION END: CARD BASE ===== */
+
+
+/* ===== SECTION START: WHOLE CARD CLICKABLE ===== */
+
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 26px;
   cursor: pointer;
-  text-decoration: none;
 }
 
-.image-link img {
-  width: 100%;
-  height: auto;
-  display: block;
+.card .badge,
+.card .image-box,
+.card h3,
+.card .summary,
+.card .spec-strip,
+.card .detail-grid,
+.card .button {
+  position: relative;
+  z-index: 2;
 }
+
+/* ===== SECTION END: WHOLE CARD CLICKABLE ===== */
+
+
+/* ===== SECTION START: BADGES ===== */
 
 .badge {
   display: inline-block;
@@ -234,6 +288,11 @@ h4 {
   color: #111;
   border: 1px solid #d9dde3;
 }
+
+/* ===== SECTION END: BADGES ===== */
+
+
+/* ===== SECTION START: PRODUCT IMAGE BOX ===== */
 
 .image-box {
   height: 260px;
@@ -264,6 +323,11 @@ h4 {
   border-radius: 18px;
 }
 
+/* ===== SECTION END: PRODUCT IMAGE BOX ===== */
+
+
+/* ===== SECTION START: SUMMARY AND SPECS ===== */
+
 .summary {
   color: #444b55;
   margin-bottom: 14px;
@@ -287,6 +351,11 @@ h4 {
   font-weight: 700;
   color: #394150;
 }
+
+/* ===== SECTION END: SUMMARY AND SPECS ===== */
+
+
+/* ===== SECTION START: DETAIL GRID ===== */
 
 .detail-grid {
   display: grid;
@@ -334,6 +403,11 @@ h4 {
   color: #9a1f1f;
 }
 
+/* ===== SECTION END: DETAIL GRID ===== */
+
+
+/* ===== SECTION START: BUTTONS ===== */
+
 .card .button {
   margin-top: 18px;
 }
@@ -358,6 +432,11 @@ h4 {
   transform: translateY(-2px);
   box-shadow: 0 12px 22px rgba(255, 153, 0, 0.28);
 }
+
+/* ===== SECTION END: BUTTONS ===== */
+
+
+/* ===== SECTION START: FAQ ===== */
 
 .faq-card {
   background: #f7f7f7;
@@ -409,6 +488,10 @@ h4 {
   color: #333;
 }
 
+/* ===== SECTION END: FAQ ===== */
+
+
+/* ===== SECTION START: TABLET RESPONSIVE ===== */
 
 @media (min-width: 700px) {
   .faq-grid {
@@ -435,6 +518,11 @@ h4 {
     overflow-y: auto;
   }
 }
+
+/* ===== SECTION END: TABLET RESPONSIVE ===== */
+
+
+/* ===== SECTION START: MOBILE RESPONSIVE ===== */
 
 @media (max-width: 700px) {
   .wrap {
@@ -465,6 +553,10 @@ h4 {
 
   .card {
     padding: 20px;
+    border-radius: 22px;
+  }
+
+  .card-link {
     border-radius: 22px;
   }
 
@@ -500,8 +592,10 @@ h4 {
   }
 }
 
+/* ===== SECTION END: MOBILE RESPONSIVE ===== */
 
-/* LARGE SCREEN CARD ALIGNMENT */
+
+/* ===== SECTION START: LARGE SCREEN CARD ALIGNMENT ===== */
 
 @media (min-width: 1100px) {
   .top-picks {
@@ -573,3 +667,5 @@ h4 {
     align-self: end;
   }
 }
+
+/* ===== SECTION END: LARGE SCREEN CARD ALIGNMENT ===== */
