@@ -1,0 +1,13 @@
+Top 3 Choices update report
+
+Changes made:
+- Rebuilt all product pages with updated 2026 product picks.
+- Replaced Amazon/product photos with original SVG product illustrations created for the site, so they are not Amazon images.
+- Fixed invalid stray > characters after Twitter image meta tags.
+- Added a How we choose page for trust and editorial transparency.
+- Lengthened meta descriptions across guide pages to address short description warnings.
+- Regenerated sitemap.xml with current pages and lastmod dates.
+- Checked internal links: no missing internal page links found after update.
+
+Important note:
+Product picks are research based. Before publishing at scale, check final prices, stock and affiliate link behaviour in Amazon Associates. Google Search Console “Crawled, currently not indexed” is not always a technical error. It often means Google has crawled the page but does not yet see enough uniqueness, authority or demand to index it. This update improves the content signals, but inbound links and genuine usefulness still matter.
