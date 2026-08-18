@@ -125,6 +125,339 @@
       "source": "/best-yoga-mats.html",
       "destination": "/products/best-yoga-mats.html",
       "permanent": true
+    },
+    {
+      "source": "/guides/air-fryers-how-to-choose-uk.html",
+      "destination": "/products/best-air-fryers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/air-fryers-running-cost-uk.html",
+      "destination": "/products/best-air-fryers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/air-fryers-troubleshooting-guide.html",
+      "destination": "/products/best-air-fryers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bathroom-scales-how-to-choose-uk.html",
+      "destination": "/products/best-bathroom-scales.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bathroom-scales-running-cost-uk.html",
+      "destination": "/products/best-bathroom-scales.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bathroom-scales-troubleshooting-guide.html",
+      "destination": "/products/best-bathroom-scales.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/blenders-how-to-choose-uk.html",
+      "destination": "/products/best-blenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/blenders-running-cost-uk.html",
+      "destination": "/products/best-blenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/blenders-troubleshooting-guide.html",
+      "destination": "/products/best-blenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bluetooth-speakers-how-to-choose-uk.html",
+      "destination": "/products/best-bluetooth-speakers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bluetooth-speakers-running-cost-uk.html",
+      "destination": "/products/best-bluetooth-speakers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bluetooth-speakers-troubleshooting-guide.html",
+      "destination": "/products/best-bluetooth-speakers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/coffee-machines-how-to-choose-uk.html",
+      "destination": "/products/best-coffee-machines.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/coffee-machines-running-cost-uk.html",
+      "destination": "/products/best-coffee-machines.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/coffee-machines-troubleshooting-guide.html",
+      "destination": "/products/best-coffee-machines.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/dehumidifiers-how-to-choose-uk.html",
+      "destination": "/products/best-dehumidifiers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/dehumidifiers-running-cost-uk.html",
+      "destination": "/products/best-dehumidifiers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/dehumidifiers-troubleshooting-guide.html",
+      "destination": "/products/best-dehumidifiers.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/desk-lamps-how-to-choose-uk.html",
+      "destination": "/products/best-desk-lamps.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/desk-lamps-running-cost-uk.html",
+      "destination": "/products/best-desk-lamps.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/desk-lamps-troubleshooting-guide.html",
+      "destination": "/products/best-desk-lamps.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/electric-toothbrushes-how-to-choose-uk.html",
+      "destination": "/products/best-electric-toothbrushes.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/electric-toothbrushes-running-cost-uk.html",
+      "destination": "/products/best-electric-toothbrushes.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/electric-toothbrushes-troubleshooting-guide.html",
+      "destination": "/products/best-electric-toothbrushes.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/fans-how-to-choose-uk.html",
+      "destination": "/products/best-fans.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/fans-running-cost-uk.html",
+      "destination": "/products/best-fans.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/fans-troubleshooting-guide.html",
+      "destination": "/products/best-fans.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/garden-tools-how-to-choose-uk.html",
+      "destination": "/products/best-garden-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/garden-tools-running-cost-uk.html",
+      "destination": "/products/best-garden-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/garden-tools-troubleshooting-guide.html",
+      "destination": "/products/best-garden-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/heaters-how-to-choose-uk.html",
+      "destination": "/products/best-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/heaters-running-cost-uk.html",
+      "destination": "/products/best-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/heaters-troubleshooting-guide.html",
+      "destination": "/products/best-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meditation-blankets-how-to-choose-uk.html",
+      "destination": "/products/best-meditation-blankets.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meditation-blankets-running-cost-uk.html",
+      "destination": "/products/best-meditation-blankets.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meditation-blankets-troubleshooting-guide.html",
+      "destination": "/products/best-meditation-blankets.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meditation-cushions-how-to-choose-uk.html",
+      "destination": "/products/best-meditation-cushions.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meditation-cushions-running-cost-uk.html",
+      "destination": "/products/best-meditation-cushions.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meditation-cushions-troubleshooting-guide.html",
+      "destination": "/products/best-meditation-cushions.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/outdoor-lights-how-to-choose-uk.html",
+      "destination": "/products/best-outdoor-lights.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/outdoor-lights-running-cost-uk.html",
+      "destination": "/products/best-outdoor-lights.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/outdoor-lights-troubleshooting-guide.html",
+      "destination": "/products/best-outdoor-lights.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/patio-heaters-how-to-choose-uk.html",
+      "destination": "/products/best-patio-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/patio-heaters-running-cost-uk.html",
+      "destination": "/products/best-patio-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/patio-heaters-troubleshooting-guide.html",
+      "destination": "/products/best-patio-heaters.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/power-banks-how-to-choose-uk.html",
+      "destination": "/products/best-power-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/power-banks-running-cost-uk.html",
+      "destination": "/products/best-power-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/power-banks-troubleshooting-guide.html",
+      "destination": "/products/best-power-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/shower-heads-how-to-choose-uk.html",
+      "destination": "/products/best-shower-heads.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/shower-heads-running-cost-uk.html",
+      "destination": "/products/best-shower-heads.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/shower-heads-troubleshooting-guide.html",
+      "destination": "/products/best-shower-heads.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/singing-bowls-how-to-choose-uk.html",
+      "destination": "/products/best-singing-bowls.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/singing-bowls-running-cost-uk.html",
+      "destination": "/products/best-singing-bowls.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/singing-bowls-troubleshooting-guide.html",
+      "destination": "/products/best-singing-bowls.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wireless-earbuds-how-to-choose-uk.html",
+      "destination": "/products/best-wireless-earbuds.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wireless-earbuds-running-cost-uk.html",
+      "destination": "/products/best-wireless-earbuds.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wireless-earbuds-troubleshooting-guide.html",
+      "destination": "/products/best-wireless-earbuds.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/yoga-mats-how-to-choose-uk.html",
+      "destination": "/products/best-yoga-mats.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/yoga-mats-running-cost-uk.html",
+      "destination": "/products/best-yoga-mats.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/yoga-mats-troubleshooting-guide.html",
+      "destination": "/products/best-yoga-mats.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/styles/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/scripts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
     }
   ]
 }

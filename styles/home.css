@@ -50,7 +50,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../images/Dhamma_wheel.png") no-repeat center;
+  background: none;
   background-size: 760px auto;
   opacity: 0.3;
   z-index: 0;
@@ -312,43 +312,43 @@ h1 {
 /* BACKGROUND IMAGES */
 
 .kitchen {
-  background-image: url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop");
+  background-image: none;
 }
 
 .bathroom {
-  background-image: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop");
+  background-image: none;
 }
 
 .homecomfort {
-  background-image: url("https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200&auto=format&fit=crop");
+  background-image: none;
 }
 
 .technology {
-  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop");
+  background-image: none;
 }
 
 .outdoor {
-  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop");
+  background-image: none;
 }
 
 .stillness {
-  background-image: url("https://images.unsplash.com/photo-1593810450967-f9c42742e326?q=80&w=1200&auto=format&fit=crop");
+  background-image: none;
 }
 
 .earbuds {
-  background-image: url("https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop");
+  background-image: none;
   background-size: cover;
   background-position: center;
 }
 
 .coffee {
-  background-image: url("https://images.unsplash.com/photo-1637029436347-e33bf98a5412?q=80&w=880&auto=format&fit=crop");
+  background-image: none;
   background-size: cover;
   background-position: center;
 }
 
 .meditation {
-  background-image: url("https://images.unsplash.com/photo-1597307509190-e33cb9fb3ff7?q=80&w=1170&auto=format&fit=crop");
+  background-image: none;
   background-size: cover;
   background-position: center;
 }
