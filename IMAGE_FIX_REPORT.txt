@@ -1,9 +1,0 @@
-Image fix applied
-
-The previous product card images used SVG files in /images/product-illustrations/. Some browsers/deployments were showing the SVG source text rather than rendering the image.
-
-This fix changes all product page visible card images and Open Graph/Twitter image references to the existing JPG/PNG image assets already present in /images/.
-
-This avoids SVG MIME/rendering issues on Vercel and should display reliably on the live site.
-
-After uploading this version, redeploy Vercel and hard refresh the product pages.
