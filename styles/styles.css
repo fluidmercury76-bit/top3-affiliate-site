@@ -249,3 +249,8 @@ padding:22px 16px;
 .cardvisual span{font-size:42px;font-weight:850;letter-spacing:-.06em;color:#164f34;}
 .guidecard:hover .cardvisual span{transform:translateY(-2px);}
 @media(max-width:700px){.cardvisual{height:130px;}}
+
+/* Buying-guide imagery refresh 2026-08-18 */
+.cardvisual{background:#f7f8f7;overflow:hidden;}
+.cardvisual img{width:100%;height:100%;object-fit:contain;padding:14px;box-sizing:border-box;display:block;transition:transform .25s ease;}
+.guidecard:hover .cardvisual img{transform:scale(1.035);}

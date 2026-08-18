@@ -681,3 +681,9 @@ h4 {
 }
 
 /* ===== SECTION END: LARGE SCREEN CARD ALIGNMENT ===== */
+
+/* Product imagery refresh 2026-08-18 */
+.image-box{background:#fff;position:relative;}
+.image-box img{transition:transform .25s ease;}
+.card:hover .image-box img{transform:scale(1.025);}
+.image-status-note{position:absolute;left:10px;right:10px;bottom:8px;background:rgba(255,255,255,.92);border:1px solid #dde2e8;border-radius:10px;padding:5px 8px;font-size:10px;line-height:1.25;font-weight:650;color:#5b6470;text-align:center;}

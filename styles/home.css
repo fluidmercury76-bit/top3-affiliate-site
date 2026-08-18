@@ -312,43 +312,43 @@ h1 {
 /* BACKGROUND IMAGES */
 
 .kitchen {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/russell-hobbs-satisfry-large-air-fryer.webp");
 }
 
 .bathroom {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/withings-body-smart.webp");
 }
 
 .homecomfort {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/meacodry-arete-two-20l.webp");
 }
 
 .technology {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/sonos-move-2.webp");
 }
 
 .outdoor {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/stihl-fsa-50-cordless-grass-trimmer.webp");
 }
 
 .stillness {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/jade-level-one-yoga-mat.webp");
 }
 
 .earbuds {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/technics-eah-az100.webp");
   background-size: cover;
   background-position: center;
 }
 
 .coffee {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/jura-j10.webp");
   background-size: cover;
   background-position: center;
 }
 
 .meditation {
-  background-image: none;
+  background-image: linear-gradient(rgba(10,20,15,.18),rgba(10,20,15,.34)), url("/images/products/yogamatters-hemp-buckwheat-zafu-meditation-cushion.webp");
   background-size: cover;
   background-position: center;
 }
@@ -539,3 +539,6 @@ h1 {
     width: min(94vw, 360px);
   }
 }
+
+/* Product photography backgrounds 2026-08-18 */
+.kitchen,.bathroom,.homecomfort,.technology,.outdoor,.stillness,.earbuds,.coffee,.meditation{background-size:cover;background-position:center;background-repeat:no-repeat;}
