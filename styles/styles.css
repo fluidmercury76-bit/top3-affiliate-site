@@ -259,3 +259,32 @@ padding:22px 16px;
 /* Category navigation photography correction 2026-08-18 */
 .heroimage .herocard{min-height:auto!important;background:rgba(255,255,255,.90)!important;backdrop-filter:blur(5px);}
 .heroimage .herooverlay{background:linear-gradient(180deg,rgba(15,30,20,.12),rgba(15,30,20,.20));}
+
+/* Category-card image-fit correction 2026-08-19
+   Show the whole navigation image inside its card instead of cropping it. */
+.cardvisual {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f4;
+  overflow: hidden;
+}
+
+.cardvisual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 10px 12px !important;
+  display: block;
+}
+
+.guidecard:hover .cardvisual img {
+  transform: scale(1.012);
+}
+
+@media (max-width:700px) {
+  .cardvisual { height: 180px; }
+  .cardvisual img { padding: 8px 10px !important; }
+}

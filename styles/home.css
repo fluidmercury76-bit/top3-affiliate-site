@@ -542,3 +542,74 @@ h1 {
 
 /* Product photography backgrounds 2026-08-18 */
 .kitchen,.bathroom,.homecomfort,.technology,.outdoor,.stillness,.earbuds,.coffee,.meditation{background-size:cover;background-position:center;background-repeat:no-repeat;}
+
+/* Navigation image-fit correction 2026-08-19
+   Homepage category and popular-guide cards use real image elements so the
+   complete picture remains visible instead of being zoomed/cropped by cover. */
+.categorycard,
+.linkcard {
+  background-image: none !important;
+  background-color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+.categorycard::before,
+.linkcard::before {
+  display: none !important;
+}
+
+.nav-cardvisual {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f4f6f4;
+  border-bottom: 1px solid #e1e6e1;
+}
+
+.nav-cardvisual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+  padding: 6px;
+}
+
+.categorycard .cardtext,
+.linkcard .cardtext {
+  position: static;
+  inset: auto;
+  width: 100%;
+  min-height: 116px;
+  padding: 16px 16px 18px;
+  border-radius: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.categorycard .cardbadge,
+.linkcard .cardbadge {
+  top: 10px;
+  left: 10px;
+}
+
+.categorycard:hover .nav-cardvisual img,
+.linkcard:hover .nav-cardvisual img {
+  transform: scale(1.015);
+  transition: transform .25s ease;
+}
+
+@media (max-width: 700px) {
+  .nav-cardvisual { height: 160px; }
+  .categorycard .cardtext,
+  .linkcard .cardtext { min-height: 104px; }
+}

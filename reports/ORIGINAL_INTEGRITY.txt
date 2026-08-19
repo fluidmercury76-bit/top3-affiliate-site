@@ -1,0 +1,4 @@
+Original uploaded ZIP: top3-affiliate-site-main (1).zip
+SHA-256: 8eac4ccfa498d053a966205b1abbfc50f8fc1fe82bebf3b0e052c975a910a257
+Working copy preserved at: /mnt/data/top3_work/original/top3-affiliate-site-main
+Refresh date: 2026-08-18
