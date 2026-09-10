@@ -5,3 +5,26 @@
 @media(max-width:900px){:root{--sidebar:0px}.mobile-bar{display:flex;position:sticky;top:0;z-index:40;background:var(--green);color:#fff;justify-content:space-between;align-items:center;padding:15px 5%}.mobile-bar>a{font:600 20px 'Manrope',sans-serif;letter-spacing:-1px}.mobile-bar button{border:1px solid #ffffff50;background:transparent;color:#fff;border-radius:5px;padding:6px 12px;font-size:14px}.sidebar{display:none;width:290px;top:66px;box-shadow:20px 0 60px #0003}.sidebar.open{display:flex}.sidebar .brand,.sidebar .side-caption{display:none}.utility{padding:12px 5%}.home-hero h1{font-size:3.9rem}.home-main{padding:0 5%}.home-hero{padding-top:30px}.hero-photo{min-height:360px}.tile-image img{height:170px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.top-picks{grid-template-columns:1fr}.card{display:flow-root;padding:25px}.card .image-box{float:left;width:32%;margin:24px 24px 14px 0}.card>.summary{font-size:15px}.card .product-more{clear:both}.card .button{width:auto;padding:13px 24px}.card .detail-link{text-align:left}.featured-grid{gap:12px}.feature-card{padding:16px}.feature-card h3{font-size:16px}.approach{padding:30px;gap:25px}.approach h2{font-size:28px}.guides{grid-template-columns:repeat(2,minmax(0,1fr))}.heroimage h1{font-size:40px}}
 @media(max-width:600px){.utility{font-size:10px}.utility>a{display:none}.home-hero{grid-template-columns:1fr;gap:25px;padding-bottom:25px}.home-hero h1{font-size:3.8rem}.hero-copy{padding-top:5px}.hero-photo{min-height:260px;height:290px}.hero-copy .eyebrow{font-size:9px;margin-bottom:18px}.hero-footnote{font-size:11px;gap:18px;margin-top:25px}.photo-caption{bottom:15px;left:15px;right:15px}.principles-strip{flex-wrap:wrap;gap:9px;font-size:11px}.principles-strip a{width:100%}.category-grid{gap:12px}.tile-image img{height:135px}.tile-copy{padding:13px}.tile-copy h3{font-size:15px}.tile-copy p{font-size:12px}.tile-count{font-size:8px;left:8px;top:8px}.section{padding:32px 0}.section-heading{align-items:start;flex-direction:column;gap:14px}.section-heading h2{font-size:27px}.section-heading .eyebrow{font-size:9px}.featured-grid,.approach,.guides{grid-template-columns:1fr}.feature-card{display:grid;grid-template-columns:110px 1fr;gap:8px 16px;padding:18px}.feature-card .image-box{grid-row:1/4;height:125px;margin:0}.feature-card .badge{grid-column:2;grid-row:1;justify-self:start}.feature-card h3{grid-column:2;grid-row:2;margin:0}.feature-card .text-link{grid-column:2;font-size:11px}.approach{gap:15px;margin-top:30px;padding:27px}.approach h2{font-size:30px}.approach-steps p{font-size:14px}.site-footer nav{gap:12px}.site-footer{padding-top:30px}.hero{padding-top:26px}.hero h1{font-size:34px}.heroimage{min-height:330px}.heroimage .wrap{padding:18px}.heroimage .herocard{padding:23px}.heroimage h1{font-size:36px}.card .image-box{float:none;width:100%;height:230px;margin:20px 0}.card h3{font-size:23px}.card>.button{width:100%}.card .detail-link{text-align:center}.detail-card .detail-grid{grid-template-columns:1fr}.product-detail>h1{font-size:32px}.legal-page h1{font-size:34px}.legal-page h2{font-size:24px}.criteria-grid{grid-template-columns:1fr 1fr}.mini-card{padding:16px}.mini-card p{font-size:13px}.heroimage .intro{font-size:14px}.notice{font-size:12px}.faq-home summary,.faq-item summary{font-size:15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* A native Amazon link covers each tile; secondary controls stay independent. */
+.amazon-card{position:relative;isolation:isolate}
+.amazon-card>a.button[rel~="sponsored"]{position:static;transform:none}
+.amazon-card>a.button[rel~="sponsored"]::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;cursor:pointer}
+.amazon-card>a.button[rel~="sponsored"]:hover::after{box-shadow:0 0 0 2px var(--emerald)}
+.amazon-card>a.button[rel~="sponsored"]:focus-visible::after{outline:3px solid #a47f27;outline-offset:4px}
+.amazon-card .source-note a,.amazon-card>.detail-link,.amazon-card .product-more>summary{position:relative;z-index:2}
+.amazon-card .product-more>summary{cursor:pointer}
+@media(min-width:901px){
+ .top-picks{align-items:stretch}
+ .top-picks>.amazon-card{display:flex;flex-direction:column;border-top:3px solid transparent}
+ .top-picks>.amazon-card:first-child{border-top-color:var(--emerald)}
+ .top-picks>.amazon-card>.badge{align-self:flex-start}
+ .top-picks>.amazon-card>.image-box{flex:none}
+ .top-picks>.amazon-card>.source-note{margin-top:auto;padding-top:16px}
+ .top-picks>.amazon-card>.button{min-height:48px}
+ @supports(grid-template-rows:subgrid){
+  .top-picks>.amazon-card{display:grid;grid-template-rows:subgrid;grid-row:span 9;row-gap:0}
+  .top-picks>.amazon-card>.badge{justify-self:start;align-self:start}
+  .top-picks>.amazon-card>.source-note{margin-top:0}
+ }
+}
