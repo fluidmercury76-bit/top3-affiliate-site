@@ -425,6 +425,16 @@
       "source": "/guides/yoga-mats-troubleshooting-guide.html",
       "destination": "/products/best-yoga-mats.html",
       "permanent": true
+    },
+    {
+      "source": "/details/silentnight-wellbeing-weighted-blanket.html",
+      "destination": "/products/best-meditation-blankets.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/simba-orbit-weighted-blanket.html",
+      "destination": "/products/best-meditation-blankets.html",
+      "permanent": true
     }
   ],
   "headers": [
