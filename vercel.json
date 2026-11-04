@@ -435,6 +435,31 @@
       "source": "/details/simba-orbit-weighted-blanket.html",
       "destination": "/products/best-meditation-blankets.html",
       "permanent": true
+    },
+    {
+      "source": "/details/wolf-garten-multi-change-system.html",
+      "destination": "/details/wolf-garten-p512-soil-care-starter-set.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/dyson-hot-cool-jet-focus-am09.html",
+      "destination": "/details/dyson-hot-cool-hf1-remote-link-pre-heat.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/leewadee-kapok-zafu-cushion.html",
+      "destination": "/details/yoga-studio-european-buckwheat-crescent-cushion.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/ugreen-nexode-200w-power-bank.html",
+      "destination": "/details/ugreen-nexode-25000mah-200w-4-port-75702.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/himalayan-bazaar-hand-hammered-singing-bowl-set.html",
+      "destination": "/details/meinl-sonic-energy-sb-or-400-r-singing-bowl-set.html",
+      "permanent": true
     }
   ],
   "headers": [
