@@ -460,6 +460,21 @@
       "source": "/details/himalayan-bazaar-hand-hammered-singing-bowl-set.html",
       "destination": "/details/meinl-sonic-energy-sb-or-400-r-singing-bowl-set.html",
       "permanent": true
+    },
+    {
+      "source": "/details/outsunny-2kw-wall-mounted-infrared-patio-heater.html",
+      "destination": "/details/outsunny-842-506v71bk-infrared-patio-heater.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/yogamatters-hemp-buckwheat-zafu-meditation-cushion.html",
+      "destination": "/details/yoga-studio-european-buckwheat-round-cushion.html",
+      "permanent": true
+    },
+    {
+      "source": "/details/ohm-store-tibetan-singing-bowl-set.html",
+      "destination": "/details/meinl-sb-u-500-universal-singing-bowl.html",
+      "permanent": true
     }
   ],
   "headers": [
